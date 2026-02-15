@@ -22,9 +22,9 @@
 - [x] Fase 5 - Conteúdo & SEO <!-- id: 19 -->
     - [x] Configurar Estrutura do Blog <!-- id: 20 -->
     - [x] Artigos Iniciais <!-- id: 21 -->
-- [ ] Fase 6 - Versionamento e Deploy (Novo) <!-- id: 22 -->
+- [x] Fase 6 - Versionamento e Deploy (Novo) <!-- id: 22 -->
     - [x] Analisar referência de deploy (Inovam) <!-- id: 23 -->
     - [x] Analisar Logs de Erro (Inovam) <!-- id: 24 -->
-    - [ ] Corrigir Estrutura do Git (Repo na Raiz SSAGSite) <!-- id: 25 -->
-    - [ ] Mover/Configurar pastas `brain` e `docs` <!-- id: 26 -->
-    - [ ] Atualizar Remote e Push (Force) <!-- id: 27 -->
+    - [x] Corrigir Estrutura do Git (Repo na Raiz SSAGSite) <!-- id: 25 -->
+    - [x] Mover/Configurar pastas `brain` e `docs` <!-- id: 26 -->
+    - [x] Atualizar Remote e Push (Force) <!-- id: 27 -->
