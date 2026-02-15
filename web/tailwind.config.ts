@@ -10,13 +10,17 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#37517e", // Dark Blue
-          light: "#47b2e4",   // Light Blue (Secondary)
-          dark: "#2c3e50",    // Darker Blue/Grey
+          DEFAULT: "#3e4e62", // Stacked Dark Blue (Nav)
+          light: "#5a6b82",   // Lighter shade
+          dark: "#2d3a4b",    // Darker shade (Content BG)
+        },
+        secondary: {
+          DEFAULT: "#fa5252", // Stacked Red (Accents/Buttons)
+          hover: "#d43d3d",
         },
         accent: {
-          DEFAULT: "#ffd700", // Yellow
-          hover: "#e6b800",
+          DEFAULT: "#fa5252", // Unified with secondary
+          hover: "#d43d3d",
         },
         text: {
           DEFAULT: "#444444",
