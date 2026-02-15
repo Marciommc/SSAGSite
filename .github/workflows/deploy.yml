@@ -66,6 +66,10 @@ jobs:
             # Login to GHCR
             echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
             
+            # Sanitize secrets (remove quotes if present in GitHub Secrets)
+            DB_URL=$(echo '${{ secrets.DATABASE_URL }}' | tr -d '"' | tr -d "'")
+            AUTH_SECRET=$(echo '${{ secrets.NEXTAUTH_SECRET }}' | tr -d '"' | tr -d "'")
+
             # Pull new image
             docker pull ghcr.io/$REPO_NAME:latest
             
@@ -87,8 +91,8 @@ jobs:
               --restart unless-stopped \
               --network ssag-net \
               -p 3002:3000 \
-              -e DATABASE_URL='${{ secrets.DATABASE_URL }}' \
-              -e NEXTAUTH_SECRET='${{ secrets.NEXTAUTH_SECRET }}' \
+              -e DATABASE_URL="$DB_URL" \
+              -e NEXTAUTH_SECRET="$AUTH_SECRET" \
               -e NEXTAUTH_URL='https://ssagtecnologia.com' \
               -e ADMIN_USER='${{ secrets.ADMIN_USER }}' \
               -e ADMIN_PASSWORD='${{ secrets.ADMIN_PASSWORD }}' \
