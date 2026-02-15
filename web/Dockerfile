@@ -31,6 +31,8 @@ ENV NEXT_TELEMETRY_DISABLED 1
 # Generate Prisma Client
 RUN npx prisma generate
 
+# Ensure clean build
+RUN rm -rf .next
 RUN npm run build
 
 # Production image, copy all the files and run next
@@ -52,6 +54,7 @@ RUN chown nextjs:nodejs .next
 # Automatically leverage output traces to reduce image size
 # https://nextjs.org/docs/advanced-features/output-file-tracing
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+# Explicitly copy static assets
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 COPY --from=builder --chown=nextjs:nodejs /app/prisma ./prisma
 
