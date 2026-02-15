@@ -1,0 +1,97 @@
+﻿2026-02-15T18:57:57.9759794Z ##[group]Run docker/metadata-action@v4
+2026-02-15T18:57:57.9760768Z with:
+2026-02-15T18:57:57.9761422Z   images: ghcr.io/Marciommc/SSAGSite
+2026-02-15T18:57:57.9762354Z   tags: type=raw,value=latest
+type=sha
+
+2026-02-15T18:57:57.9763544Z   context: workflow
+2026-02-15T18:57:57.9764579Z   github-token: ***
+2026-02-15T18:57:57.9765263Z env:
+2026-02-15T18:57:57.9765854Z   REGISTRY: ghcr.io
+2026-02-15T18:57:57.9766562Z   IMAGE_NAME: Marciommc/SSAGSite
+2026-02-15T18:57:57.9767364Z ##[endgroup]
+2026-02-15T18:57:58.3256575Z ##[group]Context info
+2026-02-15T18:57:58.3257274Z eventName: push
+2026-02-15T18:57:58.3257750Z sha: 013b3a6a355ea55aa472af042e6a03d62f81d401
+2026-02-15T18:57:58.3258340Z ref: refs/heads/main
+2026-02-15T18:57:58.3258784Z workflow: Deploy to VPS
+2026-02-15T18:57:58.3259232Z action: meta
+2026-02-15T18:57:58.3259617Z actor: Marciommc
+2026-02-15T18:57:58.3260012Z runNumber: 1
+2026-02-15T18:57:58.3260396Z runId: 22041239218
+2026-02-15T18:57:58.3261210Z ##[endgroup]
+2026-02-15T18:57:58.3267913Z ##[group]Processing images input
+2026-02-15T18:57:58.3268695Z name=ghcr.io/Marciommc/SSAGSite,enable=true
+2026-02-15T18:57:58.3269608Z ##[endgroup]
+2026-02-15T18:57:58.3278008Z ##[group]Processing tags input
+2026-02-15T18:57:58.3278705Z type=raw,value=latest,enable=true,priority=200
+2026-02-15T18:57:58.3279484Z type=sha,prefix=sha-,format=short,enable=true,priority=100
+2026-02-15T18:57:58.3280520Z ##[endgroup]
+2026-02-15T18:57:58.3281635Z ##[group]Processing flavor input
+2026-02-15T18:57:58.3282175Z latest=auto
+2026-02-15T18:57:58.3282571Z prefix=
+2026-02-15T18:57:58.3282983Z prefixLatest=false
+2026-02-15T18:57:58.3283618Z suffix=
+2026-02-15T18:57:58.3284002Z suffixLatest=false
+2026-02-15T18:57:58.3284744Z ##[endgroup]
+2026-02-15T18:57:58.3324716Z ##[group]Docker image version
+2026-02-15T18:57:58.3325215Z latest
+2026-02-15T18:57:58.3325942Z ##[endgroup]
+2026-02-15T18:57:58.3331323Z ##[group]Docker tags
+2026-02-15T18:57:58.3331775Z ghcr.io/marciommc/ssagsite:latest
+2026-02-15T18:57:58.3332174Z ghcr.io/marciommc/ssagsite:sha-013b3a6
+2026-02-15T18:57:58.3332777Z ##[endgroup]
+2026-02-15T18:57:58.3410367Z ##[group]Docker labels
+2026-02-15T18:57:58.3410958Z org.opencontainers.image.created=2026-02-15T18:57:58.328Z
+2026-02-15T18:57:58.3411417Z org.opencontainers.image.description=
+2026-02-15T18:57:58.3411780Z org.opencontainers.image.licenses=
+2026-02-15T18:57:58.3412574Z org.opencontainers.image.revision=013b3a6a355ea55aa472af042e6a03d62f81d401
+2026-02-15T18:57:58.3413743Z org.opencontainers.image.source=https://github.com/Marciommc/SSAGSite
+2026-02-15T18:57:58.3414599Z org.opencontainers.image.title=SSAGSite
+2026-02-15T18:57:58.3415334Z org.opencontainers.image.url=https://github.com/Marciommc/SSAGSite
+2026-02-15T18:57:58.3416102Z org.opencontainers.image.version=latest
+2026-02-15T18:57:58.3416923Z ##[endgroup]
+2026-02-15T18:57:58.3417594Z ##[group]JSON output
+2026-02-15T18:57:58.3418139Z {
+2026-02-15T18:57:58.3418504Z   "tags": [
+2026-02-15T18:57:58.3418912Z     "ghcr.io/marciommc/ssagsite:latest",
+2026-02-15T18:57:58.3419506Z     "ghcr.io/marciommc/ssagsite:sha-013b3a6"
+2026-02-15T18:57:58.3420012Z   ],
+2026-02-15T18:57:58.3420352Z   "labels": {
+2026-02-15T18:57:58.3420903Z     "org.opencontainers.image.created": "2026-02-15T18:57:58.328Z",
+2026-02-15T18:57:58.3421642Z     "org.opencontainers.image.description": "",
+2026-02-15T18:57:58.3422265Z     "org.opencontainers.image.licenses": "",
+2026-02-15T18:57:58.3423702Z     "org.opencontainers.image.revision": "013b3a6a355ea55aa472af042e6a03d62f81d401",
+2026-02-15T18:57:58.3424731Z     "org.opencontainers.image.source": "https://github.com/Marciommc/SSAGSite",
+2026-02-15T18:57:58.3425549Z     "org.opencontainers.image.title": "SSAGSite",
+2026-02-15T18:57:58.3426371Z     "org.opencontainers.image.url": "https://github.com/Marciommc/SSAGSite",
+2026-02-15T18:57:58.3427151Z     "org.opencontainers.image.version": "latest"
+2026-02-15T18:57:58.3427677Z   }
+2026-02-15T18:57:58.3428003Z }
+2026-02-15T18:57:58.3428629Z ##[endgroup]
+2026-02-15T18:57:58.3429272Z ##[group]Bake file definition
+2026-02-15T18:57:58.3430072Z {
+2026-02-15T18:57:58.3430432Z   "target": {
+2026-02-15T18:57:58.3430824Z     "docker-metadata-action": {
+2026-02-15T18:57:58.3431279Z       "tags": [
+2026-02-15T18:57:58.3431736Z         "ghcr.io/marciommc/ssagsite:latest",
+2026-02-15T18:57:58.3432250Z         "ghcr.io/marciommc/ssagsite:sha-013b3a6"
+2026-02-15T18:57:58.3432565Z       ],
+2026-02-15T18:57:58.3432769Z       "labels": {
+2026-02-15T18:57:58.3433106Z         "org.opencontainers.image.created": "2026-02-15T18:57:58.328Z",
+2026-02-15T18:57:58.3433904Z         "org.opencontainers.image.description": "",
+2026-02-15T18:57:58.3434350Z         "org.opencontainers.image.licenses": "",
+2026-02-15T18:57:58.3434893Z         "org.opencontainers.image.revision": "013b3a6a355ea55aa472af042e6a03d62f81d401",
+2026-02-15T18:57:58.3435541Z         "org.opencontainers.image.source": "https://github.com/Marciommc/SSAGSite",
+2026-02-15T18:57:58.3436068Z         "org.opencontainers.image.title": "SSAGSite",
+2026-02-15T18:57:58.3436575Z         "org.opencontainers.image.url": "https://github.com/Marciommc/SSAGSite",
+2026-02-15T18:57:58.3437091Z         "org.opencontainers.image.version": "latest"
+2026-02-15T18:57:58.3437431Z       },
+2026-02-15T18:57:58.3437662Z       "args": {
+2026-02-15T18:57:58.3437981Z         "DOCKER_META_IMAGES": "ghcr.io/marciommc/ssagsite",
+2026-02-15T18:57:58.3438364Z         "DOCKER_META_VERSION": "latest"
+2026-02-15T18:57:58.3438668Z       }
+2026-02-15T18:57:58.3438875Z     }
+2026-02-15T18:57:58.3439090Z   }
+2026-02-15T18:57:58.3439279Z }
+2026-02-15T18:57:58.3439755Z ##[endgroup]

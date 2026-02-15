@@ -1,0 +1,284 @@
+﻿2026-02-15T18:57:58.3614956Z ##[group]Run docker/build-push-action@v4
+2026-02-15T18:57:58.3615435Z with:
+2026-02-15T18:57:58.3615655Z   context: .
+2026-02-15T18:57:58.3615865Z   push: true
+2026-02-15T18:57:58.3616237Z   tags: ghcr.io/marciommc/ssagsite:latest
+ghcr.io/marciommc/ssagsite:sha-013b3a6
+2026-02-15T18:57:58.3618148Z   labels: org.opencontainers.image.created=2026-02-15T18:57:58.328Z
+org.opencontainers.image.description=
+org.opencontainers.image.licenses=
+org.opencontainers.image.revision=013b3a6a355ea55aa472af042e6a03d62f81d401
+org.opencontainers.image.source=https://github.com/Marciommc/SSAGSite
+org.opencontainers.image.title=SSAGSite
+org.opencontainers.image.url=https://github.com/Marciommc/SSAGSite
+org.opencontainers.image.version=latest
+2026-02-15T18:57:58.3620281Z   build-args: DATABASE_URL=***
+NEXTAUTH_SECRET=
+
+2026-02-15T18:57:58.3620616Z   load: false
+2026-02-15T18:57:58.3620834Z   no-cache: false
+2026-02-15T18:57:58.3621059Z   pull: false
+2026-02-15T18:57:58.3621396Z   github-token: ***
+2026-02-15T18:57:58.3621625Z env:
+2026-02-15T18:57:58.3621862Z   REGISTRY: ghcr.io
+2026-02-15T18:57:58.3622115Z   IMAGE_NAME: Marciommc/SSAGSite
+2026-02-15T18:57:58.3622412Z   DOCKER_METADATA_OUTPUT_VERSION: latest
+2026-02-15T18:57:58.3622923Z   DOCKER_METADATA_OUTPUT_TAGS: ghcr.io/marciommc/ssagsite:latest
+ghcr.io/marciommc/ssagsite:sha-013b3a6
+2026-02-15T18:57:58.3625262Z   DOCKER_METADATA_OUTPUT_LABELS: org.opencontainers.image.created=2026-02-15T18:57:58.328Z
+org.opencontainers.image.description=
+org.opencontainers.image.licenses=
+org.opencontainers.image.revision=013b3a6a355ea55aa472af042e6a03d62f81d401
+org.opencontainers.image.source=https://github.com/Marciommc/SSAGSite
+org.opencontainers.image.title=SSAGSite
+org.opencontainers.image.url=https://github.com/Marciommc/SSAGSite
+org.opencontainers.image.version=latest
+2026-02-15T18:57:58.3629177Z   DOCKER_METADATA_OUTPUT_JSON: {"tags":["ghcr.io/marciommc/ssagsite:latest","ghcr.io/marciommc/ssagsite:sha-013b3a6"],"labels":{"org.opencontainers.image.created":"2026-02-15T18:57:58.328Z","org.opencontainers.image.description":"","org.opencontainers.image.licenses":"","org.opencontainers.image.revision":"013b3a6a355ea55aa472af042e6a03d62f81d401","org.opencontainers.image.source":"https://github.com/Marciommc/SSAGSite","org.opencontainers.image.title":"SSAGSite","org.opencontainers.image.url":"https://github.com/Marciommc/SSAGSite","org.opencontainers.image.version":"latest"}}
+2026-02-15T18:57:58.3631576Z   DOCKER_METADATA_OUTPUT_BAKE_FILE: /tmp/docker-actions-toolkit-HnlS4c/docker-metadata-action-bake.json
+2026-02-15T18:57:58.3632083Z ##[endgroup]
+2026-02-15T18:57:58.5169135Z ##[group]GitHub Actions runtime token ACs
+2026-02-15T18:57:58.5188964Z refs/heads/main: read/write
+2026-02-15T18:57:58.5192094Z ##[endgroup]
+2026-02-15T18:57:58.5193137Z ##[group]Docker info
+2026-02-15T18:57:58.5255235Z [command]/usr/bin/docker version
+2026-02-15T18:57:58.5464622Z Client: Docker Engine - Community
+2026-02-15T18:57:58.5465383Z  Version:           29.1.5
+2026-02-15T18:57:58.5465872Z  API version:       1.52
+2026-02-15T18:57:58.5467048Z  Go version:        go1.25.6
+2026-02-15T18:57:58.5467566Z  Git commit:        0e6fee6
+2026-02-15T18:57:58.5468098Z  Built:             Fri Jan 16 12:48:47 2026
+2026-02-15T18:57:58.5468629Z  OS/Arch:           linux/amd64
+2026-02-15T18:57:58.5469089Z  Context:           default
+2026-02-15T18:57:58.5469296Z 
+2026-02-15T18:57:58.5469426Z Server: Docker Engine - Community
+2026-02-15T18:57:58.5469721Z  Engine:
+2026-02-15T18:57:58.5469941Z   Version:          29.1.5
+2026-02-15T18:57:58.5470245Z   API version:      1.52 (minimum version 1.44)
+2026-02-15T18:57:58.5470577Z   Go version:       go1.25.6
+2026-02-15T18:57:58.5470851Z   Git commit:       3b01d64
+2026-02-15T18:57:58.5471143Z   Built:            Fri Jan 16 12:48:47 2026
+2026-02-15T18:57:58.5471470Z   OS/Arch:          linux/amd64
+2026-02-15T18:57:58.5471760Z   Experimental:     false
+2026-02-15T18:57:58.5472077Z  containerd:
+2026-02-15T18:57:58.5472313Z   Version:          v2.2.1
+2026-02-15T18:57:58.5472665Z   GitCommit:        dea7da592f5d1d2b7755e3a161be07f43fad8f75
+2026-02-15T18:57:58.5473833Z  runc:
+2026-02-15T18:57:58.5474075Z   Version:          1.3.4
+2026-02-15T18:57:58.5474358Z   GitCommit:        v1.3.4-0-gd6d73eb8
+2026-02-15T18:57:58.5474665Z  docker-init:
+2026-02-15T18:57:58.5474912Z   Version:          0.19.0
+2026-02-15T18:57:58.5475262Z   GitCommit:        de40ad0
+2026-02-15T18:57:58.5519840Z [command]/usr/bin/docker info
+2026-02-15T18:57:58.7838586Z Client: Docker Engine - Community
+2026-02-15T18:57:58.7841397Z  Version:    29.1.5
+2026-02-15T18:57:58.7841861Z  Context:    default
+2026-02-15T18:57:58.7842273Z  Debug Mode: false
+2026-02-15T18:57:58.7842656Z  Plugins:
+2026-02-15T18:57:58.7843062Z   buildx: Docker Buildx (Docker Inc.)
+2026-02-15T18:57:58.7844063Z     Version:  v0.31.1
+2026-02-15T18:57:58.7844608Z     Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+2026-02-15T18:57:58.7845190Z   compose: Docker Compose (Docker Inc.)
+2026-02-15T18:57:58.7845664Z     Version:  v2.40.3
+2026-02-15T18:57:58.7846199Z     Path:     /usr/libexec/docker/cli-plugins/docker-compose
+2026-02-15T18:57:58.7846652Z 
+2026-02-15T18:57:58.7846797Z Server:
+2026-02-15T18:57:58.7847131Z  Containers: 0
+2026-02-15T18:57:58.7847493Z   Running: 0
+2026-02-15T18:57:58.7847835Z   Paused: 0
+2026-02-15T18:57:58.7848172Z   Stopped: 0
+2026-02-15T18:57:58.7848515Z  Images: 1
+2026-02-15T18:57:58.7848869Z  Server Version: 29.1.5
+2026-02-15T18:57:58.7849284Z  Storage Driver: overlayfs
+2026-02-15T18:57:58.7849862Z   driver-type: io.containerd.snapshotter.v1
+2026-02-15T18:57:58.7850394Z  Logging Driver: json-file
+2026-02-15T18:57:58.7850840Z  Cgroup Driver: systemd
+2026-02-15T18:57:58.7851243Z  Cgroup Version: 2
+2026-02-15T18:57:58.7851616Z  Plugins:
+2026-02-15T18:57:58.7851954Z   Volume: local
+2026-02-15T18:57:58.7852826Z   Network: bridge host ipvlan macvlan null overlay
+2026-02-15T18:57:58.7853761Z   Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+2026-02-15T18:57:58.7854451Z  CDI spec directories:
+2026-02-15T18:57:58.7854935Z   /etc/cdi
+2026-02-15T18:57:58.7855371Z   /var/run/cdi
+2026-02-15T18:57:58.7855632Z  Swarm: inactive
+2026-02-15T18:57:58.7856073Z  Runtimes: runc io.containerd.runc.v2
+2026-02-15T18:57:58.7856404Z  Default Runtime: runc
+2026-02-15T18:57:58.7856684Z  Init Binary: docker-init
+2026-02-15T18:57:58.7857057Z  containerd version: dea7da592f5d1d2b7755e3a161be07f43fad8f75
+2026-02-15T18:57:58.7857453Z  runc version: v1.3.4-0-gd6d73eb8
+2026-02-15T18:57:58.7857761Z  init version: de40ad0
+2026-02-15T18:57:58.7858010Z  Security Options:
+2026-02-15T18:57:58.7858243Z   apparmor
+2026-02-15T18:57:58.7858454Z   seccomp
+2026-02-15T18:57:58.7858663Z    Profile: builtin
+2026-02-15T18:57:58.7858890Z   cgroupns
+2026-02-15T18:57:58.7859129Z  Kernel Version: 6.14.0-1017-azure
+2026-02-15T18:57:58.7859461Z  Operating System: Ubuntu 24.04.3 LTS
+2026-02-15T18:57:58.7859751Z  OSType: linux
+2026-02-15T18:57:58.7859982Z  Architecture: x86_64
+2026-02-15T18:57:58.7860223Z  CPUs: 4
+2026-02-15T18:57:58.7860445Z  Total Memory: 15.62GiB
+2026-02-15T18:57:58.7860887Z  Name: runnervmjduv7
+2026-02-15T18:57:58.7861350Z  ID: 169aa517-19ec-4d49-bd61-4bb79f5886f6
+2026-02-15T18:57:58.7861899Z  Docker Root Dir: /var/lib/docker
+2026-02-15T18:57:58.7862370Z  Debug Mode: false
+2026-02-15T18:57:58.7862778Z  Username: githubactions
+2026-02-15T18:57:58.7863217Z  Experimental: false
+2026-02-15T18:57:58.7864258Z  Insecure Registries:
+2026-02-15T18:57:58.7869197Z   ::1/128
+2026-02-15T18:57:58.7869626Z   127.0.0.0/8
+2026-02-15T18:57:58.7870057Z  Live Restore Enabled: false
+2026-02-15T18:57:58.7870554Z  Firewall Backend: iptables
+2026-02-15T18:57:58.7870775Z 
+2026-02-15T18:57:58.7871378Z ##[endgroup]
+2026-02-15T18:57:58.7871819Z ##[group]Proxy configuration
+2026-02-15T18:57:58.7872126Z No proxy configuration found
+2026-02-15T18:57:58.7872613Z ##[endgroup]
+2026-02-15T18:57:58.8614420Z ##[group]Buildx version
+2026-02-15T18:57:58.8639563Z [command]/usr/bin/docker buildx version
+2026-02-15T18:57:58.9303803Z github.com/docker/buildx v0.31.1 a2675950d46b2cb171b23c2015ca44fb88607531
+2026-02-15T18:57:58.9349979Z ##[endgroup]
+2026-02-15T18:57:59.1658649Z [command]/usr/bin/docker buildx build --build-arg DATABASE_URL=*** --build-arg NEXTAUTH_SECRET= --iidfile /tmp/docker-actions-toolkit-jRW1tu/iidfile --label org.opencontainers.image.created=2026-02-15T18:57:58.328Z --label org.opencontainers.image.description= --label org.opencontainers.image.licenses= --label org.opencontainers.image.revision=013b3a6a355ea55aa472af042e6a03d62f81d401 --label org.opencontainers.image.source=https://github.com/Marciommc/SSAGSite --label org.opencontainers.image.title=SSAGSite --label org.opencontainers.image.url=https://github.com/Marciommc/SSAGSite --label org.opencontainers.image.version=latest --tag ghcr.io/marciommc/ssagsite:latest --tag ghcr.io/marciommc/ssagsite:sha-013b3a6 --metadata-file /tmp/docker-actions-toolkit-jRW1tu/metadata-file --push .
+2026-02-15T18:57:59.3755890Z #0 building with "default" instance using docker driver
+2026-02-15T18:57:59.3756623Z 
+2026-02-15T18:57:59.3756993Z #1 [internal] load build definition from Dockerfile
+2026-02-15T18:57:59.3758980Z #1 transferring dockerfile: 1.91kB done
+2026-02-15T18:57:59.3759880Z #1 DONE 0.0s
+2026-02-15T18:57:59.3760128Z 
+2026-02-15T18:57:59.3760434Z #2 [auth] library/node:pull token for registry-1.docker.io
+2026-02-15T18:57:59.5259522Z #2 DONE 0.0s
+2026-02-15T18:57:59.5259961Z 
+2026-02-15T18:57:59.5260330Z #3 [internal] load metadata for docker.io/library/node:20-alpine
+2026-02-15T18:57:59.8748714Z #3 DONE 0.6s
+2026-02-15T18:58:00.0114969Z 
+2026-02-15T18:58:00.0116940Z #4 [internal] load .dockerignore
+2026-02-15T18:58:00.0117478Z #4 transferring context: 2B done
+2026-02-15T18:58:00.0117943Z #4 DONE 0.0s
+2026-02-15T18:58:00.0118124Z 
+2026-02-15T18:58:00.0118286Z #5 [internal] load build context
+2026-02-15T18:58:00.0119127Z #5 transferring context: 502.75kB 0.0s done
+2026-02-15T18:58:00.0119578Z #5 DONE 0.1s
+2026-02-15T18:58:00.0119761Z 
+2026-02-15T18:58:00.0120404Z #6 [base 1/1] FROM docker.io/library/node:20-alpine@sha256:09e2b3d9726018aecf269bd35325f46bf75046a643a66d28360ec71132750ec8
+2026-02-15T18:58:00.0121859Z #6 resolve docker.io/library/node:20-alpine@sha256:09e2b3d9726018aecf269bd35325f46bf75046a643a66d28360ec71132750ec8 0.0s done
+2026-02-15T18:58:00.0123166Z #6 sha256:e31b2016552274339ed88ed4a438d78bf37e0f6bdf328d02207b2a598c1ef86d 445B / 445B 0.1s done
+2026-02-15T18:58:00.1929023Z #6 sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6ee0f8eaa0285cc21ac153 3.86MB / 3.86MB 0.1s done
+2026-02-15T18:58:00.1929993Z #6 sha256:eb87f4721c91769ed5206f34a9ab6ec98fc1d5235c12c2fc956665b1155e9ecb 1.26MB / 1.26MB 0.1s done
+2026-02-15T18:58:00.1930665Z #6 extracting sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6ee0f8eaa0285cc21ac153 0.1s done
+2026-02-15T18:58:00.1931301Z #6 sha256:ad6d96c196e3198e14ea37df8bba4f54bf92fb525eb65e49fa4027c7dee13f80 3.15MB / 42.78MB 0.2s
+2026-02-15T18:58:00.4072080Z #6 sha256:ad6d96c196e3198e14ea37df8bba4f54bf92fb525eb65e49fa4027c7dee13f80 42.78MB / 42.78MB 0.5s
+2026-02-15T18:58:00.5637166Z #6 sha256:ad6d96c196e3198e14ea37df8bba4f54bf92fb525eb65e49fa4027c7dee13f80 42.78MB / 42.78MB 0.5s done
+2026-02-15T18:58:00.5638550Z #6 extracting sha256:ad6d96c196e3198e14ea37df8bba4f54bf92fb525eb65e49fa4027c7dee13f80
+2026-02-15T18:58:01.3223985Z #6 extracting sha256:ad6d96c196e3198e14ea37df8bba4f54bf92fb525eb65e49fa4027c7dee13f80 0.9s done
+2026-02-15T18:58:01.3224914Z #6 DONE 1.4s
+2026-02-15T18:58:01.5077135Z 
+2026-02-15T18:58:01.5078418Z #6 [base 1/1] FROM docker.io/library/node:20-alpine@sha256:09e2b3d9726018aecf269bd35325f46bf75046a643a66d28360ec71132750ec8
+2026-02-15T18:58:01.5079936Z #6 extracting sha256:eb87f4721c91769ed5206f34a9ab6ec98fc1d5235c12c2fc956665b1155e9ecb 0.0s done
+2026-02-15T18:58:01.5080920Z #6 extracting sha256:e31b2016552274339ed88ed4a438d78bf37e0f6bdf328d02207b2a598c1ef86d done
+2026-02-15T18:58:01.5081758Z #6 DONE 1.5s
+2026-02-15T18:58:01.5081994Z 
+2026-02-15T18:58:01.5082196Z #7 [deps 1/4] RUN apk add --no-cache libc6-compat
+2026-02-15T18:58:02.3056014Z #7 0.948 (1/3) Installing musl-obstack (1.2.3-r2)
+2026-02-15T18:58:02.7256620Z #7 1.368 (2/3) Installing libucontext (1.3.3-r0)
+2026-02-15T18:58:02.8441150Z #7 1.373 (3/3) Installing gcompat (1.1.0-r4)
+2026-02-15T18:58:02.8445891Z #7 1.427 OK: 11.0 MiB in 21 packages
+2026-02-15T18:58:02.8447754Z #7 DONE 1.5s
+2026-02-15T18:58:02.8447965Z 
+2026-02-15T18:58:02.8448108Z #8 [builder 1/5] WORKDIR /app
+2026-02-15T18:58:02.8448489Z #8 DONE 1.4s
+2026-02-15T18:58:02.8448672Z 
+2026-02-15T18:58:02.8448907Z #9 [runner 2/8] RUN addgroup --system --gid 1001 nodejs
+2026-02-15T18:58:02.9698367Z #9 DONE 0.2s
+2026-02-15T18:58:02.9698718Z 
+2026-02-15T18:58:02.9705066Z #10 [deps 2/4] WORKDIR /app
+2026-02-15T18:58:02.9706106Z #10 DONE 0.0s
+2026-02-15T18:58:02.9707472Z 
+2026-02-15T18:58:02.9708101Z #11 [deps 3/4] COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
+2026-02-15T18:58:02.9709725Z #11 DONE 0.0s
+2026-02-15T18:58:02.9709914Z 
+2026-02-15T18:58:02.9711200Z #12 [deps 4/4] RUN     if [ -f yarn.lock ]; then yarn --frozen-lockfile;     elif [ -f package-lock.json ]; then npm ci;     elif [ -f pnpm-lock.yaml ]; then yarn global add pnpm && pnpm i --frozen-lockfile;     else echo "Lockfile not found." && exit 1;     fi
+2026-02-15T18:58:03.1579773Z #12 ...
+2026-02-15T18:58:03.1580087Z 
+2026-02-15T18:58:03.1580361Z #13 [runner 3/8] RUN adduser --system --uid 1001 nextjs
+2026-02-15T18:58:03.1580893Z #13 DONE 0.2s
+2026-02-15T18:58:03.3081794Z 
+2026-02-15T18:58:03.3084014Z #12 [deps 4/4] RUN     if [ -f yarn.lock ]; then yarn --frozen-lockfile;     elif [ -f package-lock.json ]; then npm ci;     elif [ -f pnpm-lock.yaml ]; then yarn global add pnpm && pnpm i --frozen-lockfile;     else echo "Lockfile not found." && exit 1;     fi
+2026-02-15T18:58:19.0420670Z #12 16.14 
+2026-02-15T18:58:19.0421201Z #12 16.14 added 463 packages, and audited 464 packages in 16s
+2026-02-15T18:58:19.2872640Z #12 16.14 
+2026-02-15T18:58:19.2873009Z #12 16.14 160 packages are looking for funding
+2026-02-15T18:58:19.2873678Z #12 16.14   run `npm fund` for details
+2026-02-15T18:58:19.2874091Z #12 16.23 
+2026-02-15T18:58:19.2874345Z #12 16.23 8 moderate severity vulnerabilities
+2026-02-15T18:58:19.2874610Z #12 16.23 
+2026-02-15T18:58:19.2874857Z #12 16.23 To address issues that do not require attention, run:
+2026-02-15T18:58:19.2875185Z #12 16.23   npm audit fix
+2026-02-15T18:58:19.2875398Z #12 16.23 
+2026-02-15T18:58:19.2875648Z #12 16.23 To address all issues (including breaking changes), run:
+2026-02-15T18:58:19.2875995Z #12 16.23   npm audit fix --force
+2026-02-15T18:58:19.2876221Z #12 16.23 
+2026-02-15T18:58:19.2876402Z #12 16.23 Run `npm audit` for details.
+2026-02-15T18:58:19.2876648Z #12 16.23 npm notice
+2026-02-15T18:58:19.2876939Z #12 16.23 npm notice New major version of npm available! 10.8.2 -> 11.10.0
+2026-02-15T18:58:19.2877468Z #12 16.23 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.10.0
+2026-02-15T18:58:19.2877951Z #12 16.23 npm notice To update run: npm install -g npm@11.10.0
+2026-02-15T18:58:19.2878276Z #12 16.23 npm notice
+2026-02-15T18:58:21.3326243Z #12 DONE 18.4s
+2026-02-15T18:58:23.7039015Z 
+2026-02-15T18:58:23.7040155Z #14 [builder 2/5] COPY --from=deps /app/node_modules ./node_modules
+2026-02-15T18:58:29.1900455Z #14 DONE 5.5s
+2026-02-15T18:58:29.3434622Z 
+2026-02-15T18:58:29.3435101Z #15 [builder 3/5] COPY . .
+2026-02-15T18:58:29.4365937Z #15 DONE 0.2s
+2026-02-15T18:58:29.5878897Z 
+2026-02-15T18:58:29.5879417Z #16 [builder 4/5] RUN npx prisma generate
+2026-02-15T18:58:31.1201045Z #16 1.682 Prisma schema loaded from prisma/schema.prisma.
+2026-02-15T18:58:31.2242227Z #16 1.685 Error: Prisma schema validation - (get-config wasm)
+2026-02-15T18:58:31.2251669Z #16 1.685 Error code: P1012
+2026-02-15T18:58:31.2255765Z #16 1.685 error: The datasource property `url` is no longer supported in schema files. Move connection URLs for Migrate to `prisma.config.ts` and pass either `adapter` for a direct database connection or `accelerateUrl` for Accelerate to the `PrismaClient` constructor. See https://pris.ly/d/config-datasource and https://pris.ly/d/prisma7-client-config
+2026-02-15T18:58:31.2258540Z #16 1.685   -->  prisma/schema.prisma:7
+2026-02-15T18:58:31.2258946Z #16 1.685    | 
+2026-02-15T18:58:31.2259252Z #16 1.685  6 |   provider = "postgresql"
+2026-02-15T18:58:31.2259683Z #16 1.685  7 |   url      = env("DATABASE_URL")
+2026-02-15T18:58:31.2260099Z #16 1.685    | 
+2026-02-15T18:58:31.2260366Z #16 1.685 
+2026-02-15T18:58:31.2260646Z #16 1.685 Validation Error Count: 1
+2026-02-15T18:58:31.2261035Z #16 1.685 [Context: getConfig]
+2026-02-15T18:58:31.2261370Z #16 1.685 
+2026-02-15T18:58:31.2261653Z #16 1.685 Prisma CLI Version : 7.4.0
+2026-02-15T18:58:31.2262015Z #16 1.709 npm notice
+2026-02-15T18:58:31.2262468Z #16 1.709 npm notice New major version of npm available! 10.8.2 -> 11.10.0
+2026-02-15T18:58:31.2263823Z #16 1.709 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.10.0
+2026-02-15T18:58:31.2264768Z #16 1.709 npm notice To update run: npm install -g npm@11.10.0
+2026-02-15T18:58:31.2265241Z #16 1.709 npm notice
+2026-02-15T18:58:31.2265807Z #16 ERROR: process "/bin/sh -c npx prisma generate" did not complete successfully: exit code: 1
+2026-02-15T18:58:31.2266507Z ------
+2026-02-15T18:58:31.2266840Z  > [builder 4/5] RUN npx prisma generate:
+2026-02-15T18:58:31.2267268Z 1.685 
+2026-02-15T18:58:31.2267572Z 1.685 Validation Error Count: 1
+2026-02-15T18:58:31.2267946Z 1.685 [Context: getConfig]
+2026-02-15T18:58:31.2268138Z 1.685 
+2026-02-15T18:58:31.2268459Z 1.685 Prisma CLI Version : 7.4.0
+2026-02-15T18:58:31.2268842Z 1.709 npm notice
+2026-02-15T18:58:31.2269165Z 1.709 npm notice New major version of npm available! 10.8.2 -> 11.10.0
+2026-02-15T18:58:31.2269909Z 1.709 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.10.0
+2026-02-15T18:58:31.2270658Z 1.709 npm notice To update run: npm install -g npm@11.10.0
+2026-02-15T18:58:31.2271639Z 1.709 npm notice
+2026-02-15T18:58:31.2271882Z ------
+2026-02-15T18:58:31.2294931Z 
+2026-02-15T18:58:31.2295668Z  [33m5 warnings found (use docker --debug to expand):
+2026-02-15T18:58:31.2301429Z [0m - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 28)
+2026-02-15T18:58:31.2309372Z  - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 39)
+2026-02-15T18:58:31.2310591Z  - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 40)
+2026-02-15T18:58:31.2311790Z  - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 60)
+2026-02-15T18:58:31.2320311Z  - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 62)
+2026-02-15T18:58:31.2321274Z Dockerfile:31
+2026-02-15T18:58:31.2321704Z --------------------
+2026-02-15T18:58:31.2322018Z   29 |     
+2026-02-15T18:58:31.2324791Z   30 |     # Generate Prisma Client
+2026-02-15T18:58:31.2329974Z   31 | >>> RUN npx prisma generate
+2026-02-15T18:58:31.2330386Z   32 |     
+2026-02-15T18:58:31.2330651Z   33 |     RUN npm run build
+2026-02-15T18:58:31.2330984Z --------------------
+2026-02-15T18:58:31.2331796Z ERROR: failed to build: failed to solve: process "/bin/sh -c npx prisma generate" did not complete successfully: exit code: 1
+2026-02-15T18:58:31.2420497Z ##[error]buildx failed with: ERROR: failed to build: failed to solve: process "/bin/sh -c npx prisma generate" did not complete successfully: exit code: 1

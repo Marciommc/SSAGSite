@@ -1,0 +1,631 @@
+﻿2026-02-15T18:57:55.1913942Z Current runner version: '2.331.0'
+2026-02-15T18:57:55.1940379Z ##[group]Runner Image Provisioner
+2026-02-15T18:57:55.1941169Z Hosted Compute Agent
+2026-02-15T18:57:55.1942017Z Version: 20260123.484
+2026-02-15T18:57:55.1942645Z Commit: 6bd6555ca37d84114959e1c76d2c01448ff61c5d
+2026-02-15T18:57:55.1943715Z Build Date: 2026-01-23T19:41:17Z
+2026-02-15T18:57:55.1944544Z Worker ID: {5f51f142-62c3-4ec9-adba-05f29a79b2cf}
+2026-02-15T18:57:55.1945271Z Azure Region: northcentralus
+2026-02-15T18:57:55.1945894Z ##[endgroup]
+2026-02-15T18:57:55.1947558Z ##[group]Operating System
+2026-02-15T18:57:55.1948131Z Ubuntu
+2026-02-15T18:57:55.1948680Z 24.04.3
+2026-02-15T18:57:55.1949217Z LTS
+2026-02-15T18:57:55.1949650Z ##[endgroup]
+2026-02-15T18:57:55.1950200Z ##[group]Runner Image
+2026-02-15T18:57:55.1950766Z Image: ubuntu-24.04
+2026-02-15T18:57:55.1951310Z Version: 20260209.23.1
+2026-02-15T18:57:55.1952675Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260209.23/images/ubuntu/Ubuntu2404-Readme.md
+2026-02-15T18:57:55.1954450Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260209.23
+2026-02-15T18:57:55.1955538Z ##[endgroup]
+2026-02-15T18:57:55.1956687Z ##[group]GITHUB_TOKEN Permissions
+2026-02-15T18:57:55.1958920Z Contents: read
+2026-02-15T18:57:55.1959498Z Metadata: read
+2026-02-15T18:57:55.1960068Z Packages: write
+2026-02-15T18:57:55.1960669Z ##[endgroup]
+2026-02-15T18:57:55.1962974Z Secret source: Actions
+2026-02-15T18:57:55.1964360Z Prepare workflow directory
+2026-02-15T18:57:55.2516004Z Prepare all required actions
+2026-02-15T18:57:55.2557014Z Getting action download info
+2026-02-15T18:57:55.6149364Z Download action repository 'actions/checkout@v3' (SHA:f43a0e5ff2bd294095638e18286ca9a3d1956744)
+2026-02-15T18:57:55.7366833Z Download action repository 'docker/login-action@v2' (SHA:465a07811f14bebb1938fbed4728c6a1ff8901fc)
+2026-02-15T18:57:56.0831679Z Download action repository 'docker/metadata-action@v4' (SHA:818d4b7b91585d195f67373fd9cb0332e31a7175)
+2026-02-15T18:57:56.4337199Z Download action repository 'docker/build-push-action@v4' (SHA:0a97817b6ade9f46837855d676c4cca3a2471fc9)
+2026-02-15T18:57:56.9370413Z Complete job name: build-and-push
+2026-02-15T18:57:57.0145678Z ##[group]Run actions/checkout@v3
+2026-02-15T18:57:57.0147060Z with:
+2026-02-15T18:57:57.0147844Z   repository: Marciommc/SSAGSite
+2026-02-15T18:57:57.0149185Z   token: ***
+2026-02-15T18:57:57.0149948Z   ssh-strict: true
+2026-02-15T18:57:57.0150785Z   persist-credentials: true
+2026-02-15T18:57:57.0151677Z   clean: true
+2026-02-15T18:57:57.0152488Z   sparse-checkout-cone-mode: true
+2026-02-15T18:57:57.0153643Z   fetch-depth: 1
+2026-02-15T18:57:57.0154430Z   fetch-tags: false
+2026-02-15T18:57:57.0155221Z   lfs: false
+2026-02-15T18:57:57.0155962Z   submodules: false
+2026-02-15T18:57:57.0156807Z   set-safe-directory: true
+2026-02-15T18:57:57.0157945Z env:
+2026-02-15T18:57:57.0158651Z   REGISTRY: ghcr.io
+2026-02-15T18:57:57.0159488Z   IMAGE_NAME: Marciommc/SSAGSite
+2026-02-15T18:57:57.0160437Z ##[endgroup]
+2026-02-15T18:57:57.1084795Z Syncing repository: Marciommc/SSAGSite
+2026-02-15T18:57:57.1087649Z ##[group]Getting Git version info
+2026-02-15T18:57:57.1089078Z Working directory is '/home/runner/work/SSAGSite/SSAGSite'
+2026-02-15T18:57:57.1091000Z [command]/usr/bin/git version
+2026-02-15T18:57:57.1094472Z git version 2.52.0
+2026-02-15T18:57:57.1123049Z ##[endgroup]
+2026-02-15T18:57:57.1141862Z Temporarily overriding HOME='/home/runner/work/_temp/6cce5017-2ba2-4e1f-8be4-fc333e334453' before making global git config changes
+2026-02-15T18:57:57.1146761Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-15T18:57:57.1149446Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/SSAGSite/SSAGSite
+2026-02-15T18:57:57.1188805Z Deleting the contents of '/home/runner/work/SSAGSite/SSAGSite'
+2026-02-15T18:57:57.1193677Z ##[group]Initializing the repository
+2026-02-15T18:57:57.1196521Z [command]/usr/bin/git init /home/runner/work/SSAGSite/SSAGSite
+2026-02-15T18:57:57.1298418Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-02-15T18:57:57.1301895Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-02-15T18:57:57.1305773Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-02-15T18:57:57.1308552Z hint: call:
+2026-02-15T18:57:57.1310182Z hint:
+2026-02-15T18:57:57.1311821Z hint: 	git config --global init.defaultBranch <name>
+2026-02-15T18:57:57.1314061Z hint:
+2026-02-15T18:57:57.1316019Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-02-15T18:57:57.1319180Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-02-15T18:57:57.1321545Z hint:
+2026-02-15T18:57:57.1322882Z hint: 	git branch -m <name>
+2026-02-15T18:57:57.1324432Z hint:
+2026-02-15T18:57:57.1325825Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-02-15T18:57:57.1327947Z Initialized empty Git repository in /home/runner/work/SSAGSite/SSAGSite/.git/
+2026-02-15T18:57:57.1333043Z [command]/usr/bin/git remote add origin https://github.com/Marciommc/SSAGSite
+2026-02-15T18:57:57.1357243Z ##[endgroup]
+2026-02-15T18:57:57.1359705Z ##[group]Disabling automatic garbage collection
+2026-02-15T18:57:57.1361959Z [command]/usr/bin/git config --local gc.auto 0
+2026-02-15T18:57:57.1392949Z ##[endgroup]
+2026-02-15T18:57:57.1395461Z ##[group]Setting up auth
+2026-02-15T18:57:57.1399445Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-15T18:57:57.1434191Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-15T18:57:57.1789353Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-15T18:57:57.1821116Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-02-15T18:57:57.2080826Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-02-15T18:57:57.2126012Z ##[endgroup]
+2026-02-15T18:57:57.2128435Z ##[group]Fetching the repository
+2026-02-15T18:57:57.2136318Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +013b3a6a355ea55aa472af042e6a03d62f81d401:refs/remotes/origin/main
+2026-02-15T18:57:57.4082766Z remote: Enumerating objects: 67, done.        
+2026-02-15T18:57:57.4086894Z remote: Counting objects:   1% (1/67)        
+2026-02-15T18:57:57.4088898Z remote: Counting objects:   2% (2/67)        
+2026-02-15T18:57:57.4090871Z remote: Counting objects:   4% (3/67)        
+2026-02-15T18:57:57.4092598Z remote: Counting objects:   5% (4/67)        
+2026-02-15T18:57:57.4094771Z remote: Counting objects:   7% (5/67)        
+2026-02-15T18:57:57.4096822Z remote: Counting objects:   8% (6/67)        
+2026-02-15T18:57:57.4098793Z remote: Counting objects:  10% (7/67)        
+2026-02-15T18:57:57.4100734Z remote: Counting objects:  11% (8/67)        
+2026-02-15T18:57:57.4102626Z remote: Counting objects:  13% (9/67)        
+2026-02-15T18:57:57.4104570Z remote: Counting objects:  14% (10/67)        
+2026-02-15T18:57:57.4105749Z remote: Counting objects:  16% (11/67)        
+2026-02-15T18:57:57.4106935Z remote: Counting objects:  17% (12/67)        
+2026-02-15T18:57:57.4108097Z remote: Counting objects:  19% (13/67)        
+2026-02-15T18:57:57.4109250Z remote: Counting objects:  20% (14/67)        
+2026-02-15T18:57:57.4110630Z remote: Counting objects:  22% (15/67)        
+2026-02-15T18:57:57.4111824Z remote: Counting objects:  23% (16/67)        
+2026-02-15T18:57:57.4112981Z remote: Counting objects:  25% (17/67)        
+2026-02-15T18:57:57.4114361Z remote: Counting objects:  26% (18/67)        
+2026-02-15T18:57:57.4115520Z remote: Counting objects:  28% (19/67)        
+2026-02-15T18:57:57.4116994Z remote: Counting objects:  29% (20/67)        
+2026-02-15T18:57:57.4118161Z remote: Counting objects:  31% (21/67)        
+2026-02-15T18:57:57.4119341Z remote: Counting objects:  32% (22/67)        
+2026-02-15T18:57:57.4120502Z remote: Counting objects:  34% (23/67)        
+2026-02-15T18:57:57.4121653Z remote: Counting objects:  35% (24/67)        
+2026-02-15T18:57:57.4122813Z remote: Counting objects:  37% (25/67)        
+2026-02-15T18:57:57.4124244Z remote: Counting objects:  38% (26/67)        
+2026-02-15T18:57:57.4125407Z remote: Counting objects:  40% (27/67)        
+2026-02-15T18:57:57.4126562Z remote: Counting objects:  41% (28/67)        
+2026-02-15T18:57:57.4127711Z remote: Counting objects:  43% (29/67)        
+2026-02-15T18:57:57.4128849Z remote: Counting objects:  44% (30/67)        
+2026-02-15T18:57:57.4130143Z remote: Counting objects:  46% (31/67)        
+2026-02-15T18:57:57.4131298Z remote: Counting objects:  47% (32/67)        
+2026-02-15T18:57:57.4132468Z remote: Counting objects:  49% (33/67)        
+2026-02-15T18:57:57.4133825Z remote: Counting objects:  50% (34/67)        
+2026-02-15T18:57:57.4134998Z remote: Counting objects:  52% (35/67)        
+2026-02-15T18:57:57.4136395Z remote: Counting objects:  53% (36/67)        
+2026-02-15T18:57:57.4137600Z remote: Counting objects:  55% (37/67)        
+2026-02-15T18:57:57.4139338Z remote: Counting objects:  56% (38/67)        
+2026-02-15T18:57:57.4140622Z remote: Counting objects:  58% (39/67)        
+2026-02-15T18:57:57.4141853Z remote: Counting objects:  59% (40/67)        
+2026-02-15T18:57:57.4143168Z remote: Counting objects:  61% (41/67)        
+2026-02-15T18:57:57.4144714Z remote: Counting objects:  62% (42/67)        
+2026-02-15T18:57:57.4145972Z remote: Counting objects:  64% (43/67)        
+2026-02-15T18:57:57.4147308Z remote: Counting objects:  65% (44/67)        
+2026-02-15T18:57:57.4148587Z remote: Counting objects:  67% (45/67)        
+2026-02-15T18:57:57.4149858Z remote: Counting objects:  68% (46/67)        
+2026-02-15T18:57:57.4151177Z remote: Counting objects:  70% (47/67)        
+2026-02-15T18:57:57.4152680Z remote: Counting objects:  71% (48/67)        
+2026-02-15T18:57:57.4154174Z remote: Counting objects:  73% (49/67)        
+2026-02-15T18:57:57.4155478Z remote: Counting objects:  74% (50/67)        
+2026-02-15T18:57:57.4156758Z remote: Counting objects:  76% (51/67)        
+2026-02-15T18:57:57.4158005Z remote: Counting objects:  77% (52/67)        
+2026-02-15T18:57:57.4159334Z remote: Counting objects:  79% (53/67)        
+2026-02-15T18:57:57.4160588Z remote: Counting objects:  80% (54/67)        
+2026-02-15T18:57:57.4161825Z remote: Counting objects:  82% (55/67)        
+2026-02-15T18:57:57.4163129Z remote: Counting objects:  83% (56/67)        
+2026-02-15T18:57:57.4164962Z remote: Counting objects:  85% (57/67)        
+2026-02-15T18:57:57.4166188Z remote: Counting objects:  86% (58/67)        
+2026-02-15T18:57:57.4167628Z remote: Counting objects:  88% (59/67)        
+2026-02-15T18:57:57.4168914Z remote: Counting objects:  89% (60/67)        
+2026-02-15T18:57:57.4170193Z remote: Counting objects:  91% (61/67)        
+2026-02-15T18:57:57.4171494Z remote: Counting objects:  92% (62/67)        
+2026-02-15T18:57:57.4172749Z remote: Counting objects:  94% (63/67)        
+2026-02-15T18:57:57.4174286Z remote: Counting objects:  95% (64/67)        
+2026-02-15T18:57:57.4175634Z remote: Counting objects:  97% (65/67)        
+2026-02-15T18:57:57.4176918Z remote: Counting objects:  98% (66/67)        
+2026-02-15T18:57:57.4178153Z remote: Counting objects: 100% (67/67)        
+2026-02-15T18:57:57.4179490Z remote: Counting objects: 100% (67/67), done.        
+2026-02-15T18:57:57.4180838Z remote: Compressing objects:   2% (1/44)        
+2026-02-15T18:57:57.4182150Z remote: Compressing objects:   4% (2/44)        
+2026-02-15T18:57:57.4183875Z remote: Compressing objects:   6% (3/44)        
+2026-02-15T18:57:57.4185244Z remote: Compressing objects:   9% (4/44)        
+2026-02-15T18:57:57.4186701Z remote: Compressing objects:  11% (5/44)        
+2026-02-15T18:57:57.4188088Z remote: Compressing objects:  13% (6/44)        
+2026-02-15T18:57:57.4189410Z remote: Compressing objects:  15% (7/44)        
+2026-02-15T18:57:57.4190697Z remote: Compressing objects:  18% (8/44)        
+2026-02-15T18:57:57.4192107Z remote: Compressing objects:  20% (9/44)        
+2026-02-15T18:57:57.4193646Z remote: Compressing objects:  22% (10/44)        
+2026-02-15T18:57:57.4194924Z remote: Compressing objects:  25% (11/44)        
+2026-02-15T18:57:57.4196312Z remote: Compressing objects:  27% (12/44)        
+2026-02-15T18:57:57.4197637Z remote: Compressing objects:  29% (13/44)        
+2026-02-15T18:57:57.4198927Z remote: Compressing objects:  31% (14/44)        
+2026-02-15T18:57:57.4200291Z remote: Compressing objects:  34% (15/44)        
+2026-02-15T18:57:57.4201598Z remote: Compressing objects:  36% (16/44)        
+2026-02-15T18:57:57.4202868Z remote: Compressing objects:  38% (17/44)        
+2026-02-15T18:57:57.4204407Z remote: Compressing objects:  40% (18/44)        
+2026-02-15T18:57:57.4205763Z remote: Compressing objects:  43% (19/44)        
+2026-02-15T18:57:57.4207031Z remote: Compressing objects:  45% (20/44)        
+2026-02-15T18:57:57.4208388Z remote: Compressing objects:  47% (21/44)        
+2026-02-15T18:57:57.4209695Z remote: Compressing objects:  50% (22/44)        
+2026-02-15T18:57:57.4210991Z remote: Compressing objects:  52% (23/44)        
+2026-02-15T18:57:57.4212358Z remote: Compressing objects:  54% (24/44)        
+2026-02-15T18:57:57.4213814Z remote: Compressing objects:  56% (25/44)        
+2026-02-15T18:57:57.4215084Z remote: Compressing objects:  59% (26/44)        
+2026-02-15T18:57:57.4216467Z remote: Compressing objects:  61% (27/44)        
+2026-02-15T18:57:57.4217743Z remote: Compressing objects:  63% (28/44)        
+2026-02-15T18:57:57.4219052Z remote: Compressing objects:  65% (29/44)        
+2026-02-15T18:57:57.4220430Z remote: Compressing objects:  68% (30/44)        
+2026-02-15T18:57:57.4221751Z remote: Compressing objects:  70% (31/44)        
+2026-02-15T18:57:57.4223065Z remote: Compressing objects:  72% (32/44)        
+2026-02-15T18:57:57.4224826Z remote: Compressing objects:  75% (33/44)        
+2026-02-15T18:57:57.4226131Z remote: Compressing objects:  77% (34/44)        
+2026-02-15T18:57:57.4227462Z remote: Compressing objects:  79% (35/44)        
+2026-02-15T18:57:57.4228834Z remote: Compressing objects:  81% (36/44)        
+2026-02-15T18:57:57.4230140Z remote: Compressing objects:  84% (37/44)        
+2026-02-15T18:57:57.4231439Z remote: Compressing objects:  86% (38/44)        
+2026-02-15T18:57:57.4233172Z remote: Compressing objects:  88% (39/44)        
+2026-02-15T18:57:57.4234850Z remote: Compressing objects:  90% (40/44)        
+2026-02-15T18:57:57.4236396Z remote: Compressing objects:  93% (41/44)        
+2026-02-15T18:57:57.4238066Z remote: Compressing objects:  95% (42/44)        
+2026-02-15T18:57:57.4239372Z remote: Compressing objects:  97% (43/44)        
+2026-02-15T18:57:57.4240718Z remote: Compressing objects: 100% (44/44)        
+2026-02-15T18:57:57.4242152Z remote: Compressing objects: 100% (44/44), done.        
+2026-02-15T18:57:57.4427085Z remote: Total 67 (delta 7), reused 67 (delta 7), pack-reused 0 (from 0)        
+2026-02-15T18:57:57.4547700Z From https://github.com/Marciommc/SSAGSite
+2026-02-15T18:57:57.4550583Z  * [new ref]         013b3a6a355ea55aa472af042e6a03d62f81d401 -> origin/main
+2026-02-15T18:57:57.4587555Z ##[endgroup]
+2026-02-15T18:57:57.4589754Z ##[group]Determining the checkout info
+2026-02-15T18:57:57.4591531Z ##[endgroup]
+2026-02-15T18:57:57.4593837Z ##[group]Checking out the ref
+2026-02-15T18:57:57.4595478Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-02-15T18:57:57.4694596Z Switched to a new branch 'main'
+2026-02-15T18:57:57.4697389Z branch 'main' set up to track 'origin/main'.
+2026-02-15T18:57:57.4704904Z ##[endgroup]
+2026-02-15T18:57:57.4740559Z [command]/usr/bin/git log -1 --format='%H'
+2026-02-15T18:57:57.4764708Z '013b3a6a355ea55aa472af042e6a03d62f81d401'
+2026-02-15T18:57:57.5016016Z ##[group]Run docker/login-action@v2
+2026-02-15T18:57:57.5017106Z with:
+2026-02-15T18:57:57.5017899Z   registry: ghcr.io
+2026-02-15T18:57:57.5018943Z   username: Marciommc
+2026-02-15T18:57:57.5020195Z   password: ***
+2026-02-15T18:57:57.5021034Z   ecr: auto
+2026-02-15T18:57:57.5021911Z   logout: true
+2026-02-15T18:57:57.5022684Z env:
+2026-02-15T18:57:57.5023783Z   REGISTRY: ghcr.io
+2026-02-15T18:57:57.5024814Z   IMAGE_NAME: Marciommc/SSAGSite
+2026-02-15T18:57:57.5025792Z ##[endgroup]
+2026-02-15T18:57:57.6100017Z Logging into ghcr.io...
+2026-02-15T18:57:57.9576345Z Login Succeeded!
+2026-02-15T18:57:57.9759830Z ##[group]Run docker/metadata-action@v4
+2026-02-15T18:57:57.9760773Z with:
+2026-02-15T18:57:57.9761426Z   images: ghcr.io/Marciommc/SSAGSite
+2026-02-15T18:57:57.9762362Z   tags: type=raw,value=latest
+type=sha
+
+2026-02-15T18:57:57.9763553Z   context: workflow
+2026-02-15T18:57:57.9764585Z   github-token: ***
+2026-02-15T18:57:57.9765267Z env:
+2026-02-15T18:57:57.9765857Z   REGISTRY: ghcr.io
+2026-02-15T18:57:57.9766566Z   IMAGE_NAME: Marciommc/SSAGSite
+2026-02-15T18:57:57.9767367Z ##[endgroup]
+2026-02-15T18:57:58.3256647Z ##[group]Context info
+2026-02-15T18:57:58.3257288Z eventName: push
+2026-02-15T18:57:58.3257760Z sha: 013b3a6a355ea55aa472af042e6a03d62f81d401
+2026-02-15T18:57:58.3258348Z ref: refs/heads/main
+2026-02-15T18:57:58.3258792Z workflow: Deploy to VPS
+2026-02-15T18:57:58.3259241Z action: meta
+2026-02-15T18:57:58.3259627Z actor: Marciommc
+2026-02-15T18:57:58.3260020Z runNumber: 1
+2026-02-15T18:57:58.3260404Z runId: 22041239218
+2026-02-15T18:57:58.3261220Z ##[endgroup]
+2026-02-15T18:57:58.3268025Z ##[group]Processing images input
+2026-02-15T18:57:58.3268705Z name=ghcr.io/Marciommc/SSAGSite,enable=true
+2026-02-15T18:57:58.3269615Z ##[endgroup]
+2026-02-15T18:57:58.3278029Z ##[group]Processing tags input
+2026-02-15T18:57:58.3278719Z type=raw,value=latest,enable=true,priority=200
+2026-02-15T18:57:58.3279507Z type=sha,prefix=sha-,format=short,enable=true,priority=100
+2026-02-15T18:57:58.3280535Z ##[endgroup]
+2026-02-15T18:57:58.3281648Z ##[group]Processing flavor input
+2026-02-15T18:57:58.3282187Z latest=auto
+2026-02-15T18:57:58.3282582Z prefix=
+2026-02-15T18:57:58.3282992Z prefixLatest=false
+2026-02-15T18:57:58.3283628Z suffix=
+2026-02-15T18:57:58.3284008Z suffixLatest=false
+2026-02-15T18:57:58.3284757Z ##[endgroup]
+2026-02-15T18:57:58.3324741Z ##[group]Docker image version
+2026-02-15T18:57:58.3325223Z latest
+2026-02-15T18:57:58.3325954Z ##[endgroup]
+2026-02-15T18:57:58.3331350Z ##[group]Docker tags
+2026-02-15T18:57:58.3331783Z ghcr.io/marciommc/ssagsite:latest
+2026-02-15T18:57:58.3332210Z ghcr.io/marciommc/ssagsite:sha-013b3a6
+2026-02-15T18:57:58.3332781Z ##[endgroup]
+2026-02-15T18:57:58.3410398Z ##[group]Docker labels
+2026-02-15T18:57:58.3410972Z org.opencontainers.image.created=2026-02-15T18:57:58.328Z
+2026-02-15T18:57:58.3411423Z org.opencontainers.image.description=
+2026-02-15T18:57:58.3411784Z org.opencontainers.image.licenses=
+2026-02-15T18:57:58.3412586Z org.opencontainers.image.revision=013b3a6a355ea55aa472af042e6a03d62f81d401
+2026-02-15T18:57:58.3413757Z org.opencontainers.image.source=https://github.com/Marciommc/SSAGSite
+2026-02-15T18:57:58.3414606Z org.opencontainers.image.title=SSAGSite
+2026-02-15T18:57:58.3415341Z org.opencontainers.image.url=https://github.com/Marciommc/SSAGSite
+2026-02-15T18:57:58.3416108Z org.opencontainers.image.version=latest
+2026-02-15T18:57:58.3416929Z ##[endgroup]
+2026-02-15T18:57:58.3417601Z ##[group]JSON output
+2026-02-15T18:57:58.3418145Z {
+2026-02-15T18:57:58.3418510Z   "tags": [
+2026-02-15T18:57:58.3418936Z     "ghcr.io/marciommc/ssagsite:latest",
+2026-02-15T18:57:58.3419511Z     "ghcr.io/marciommc/ssagsite:sha-013b3a6"
+2026-02-15T18:57:58.3420017Z   ],
+2026-02-15T18:57:58.3420357Z   "labels": {
+2026-02-15T18:57:58.3420908Z     "org.opencontainers.image.created": "2026-02-15T18:57:58.328Z",
+2026-02-15T18:57:58.3421647Z     "org.opencontainers.image.description": "",
+2026-02-15T18:57:58.3422270Z     "org.opencontainers.image.licenses": "",
+2026-02-15T18:57:58.3423713Z     "org.opencontainers.image.revision": "013b3a6a355ea55aa472af042e6a03d62f81d401",
+2026-02-15T18:57:58.3424738Z     "org.opencontainers.image.source": "https://github.com/Marciommc/SSAGSite",
+2026-02-15T18:57:58.3425556Z     "org.opencontainers.image.title": "SSAGSite",
+2026-02-15T18:57:58.3426376Z     "org.opencontainers.image.url": "https://github.com/Marciommc/SSAGSite",
+2026-02-15T18:57:58.3427156Z     "org.opencontainers.image.version": "latest"
+2026-02-15T18:57:58.3427682Z   }
+2026-02-15T18:57:58.3428009Z }
+2026-02-15T18:57:58.3428635Z ##[endgroup]
+2026-02-15T18:57:58.3429554Z ##[group]Bake file definition
+2026-02-15T18:57:58.3430084Z {
+2026-02-15T18:57:58.3430438Z   "target": {
+2026-02-15T18:57:58.3430829Z     "docker-metadata-action": {
+2026-02-15T18:57:58.3431283Z       "tags": [
+2026-02-15T18:57:58.3431743Z         "ghcr.io/marciommc/ssagsite:latest",
+2026-02-15T18:57:58.3432256Z         "ghcr.io/marciommc/ssagsite:sha-013b3a6"
+2026-02-15T18:57:58.3432569Z       ],
+2026-02-15T18:57:58.3432773Z       "labels": {
+2026-02-15T18:57:58.3433110Z         "org.opencontainers.image.created": "2026-02-15T18:57:58.328Z",
+2026-02-15T18:57:58.3433917Z         "org.opencontainers.image.description": "",
+2026-02-15T18:57:58.3434355Z         "org.opencontainers.image.licenses": "",
+2026-02-15T18:57:58.3434898Z         "org.opencontainers.image.revision": "013b3a6a355ea55aa472af042e6a03d62f81d401",
+2026-02-15T18:57:58.3435546Z         "org.opencontainers.image.source": "https://github.com/Marciommc/SSAGSite",
+2026-02-15T18:57:58.3436072Z         "org.opencontainers.image.title": "SSAGSite",
+2026-02-15T18:57:58.3436590Z         "org.opencontainers.image.url": "https://github.com/Marciommc/SSAGSite",
+2026-02-15T18:57:58.3437103Z         "org.opencontainers.image.version": "latest"
+2026-02-15T18:57:58.3437436Z       },
+2026-02-15T18:57:58.3437666Z       "args": {
+2026-02-15T18:57:58.3437986Z         "DOCKER_META_IMAGES": "ghcr.io/marciommc/ssagsite",
+2026-02-15T18:57:58.3438369Z         "DOCKER_META_VERSION": "latest"
+2026-02-15T18:57:58.3438673Z       }
+2026-02-15T18:57:58.3438879Z     }
+2026-02-15T18:57:58.3439094Z   }
+2026-02-15T18:57:58.3439282Z }
+2026-02-15T18:57:58.3439759Z ##[endgroup]
+2026-02-15T18:57:58.3614992Z ##[group]Run docker/build-push-action@v4
+2026-02-15T18:57:58.3615440Z with:
+2026-02-15T18:57:58.3615658Z   context: .
+2026-02-15T18:57:58.3615869Z   push: true
+2026-02-15T18:57:58.3616247Z   tags: ghcr.io/marciommc/ssagsite:latest
+ghcr.io/marciommc/ssagsite:sha-013b3a6
+2026-02-15T18:57:58.3618173Z   labels: org.opencontainers.image.created=2026-02-15T18:57:58.328Z
+org.opencontainers.image.description=
+org.opencontainers.image.licenses=
+org.opencontainers.image.revision=013b3a6a355ea55aa472af042e6a03d62f81d401
+org.opencontainers.image.source=https://github.com/Marciommc/SSAGSite
+org.opencontainers.image.title=SSAGSite
+org.opencontainers.image.url=https://github.com/Marciommc/SSAGSite
+org.opencontainers.image.version=latest
+2026-02-15T18:57:58.3620289Z   build-args: DATABASE_URL=***
+NEXTAUTH_SECRET=
+
+2026-02-15T18:57:58.3620620Z   load: false
+2026-02-15T18:57:58.3620837Z   no-cache: false
+2026-02-15T18:57:58.3621062Z   pull: false
+2026-02-15T18:57:58.3621400Z   github-token: ***
+2026-02-15T18:57:58.3621666Z env:
+2026-02-15T18:57:58.3621865Z   REGISTRY: ghcr.io
+2026-02-15T18:57:58.3622118Z   IMAGE_NAME: Marciommc/SSAGSite
+2026-02-15T18:57:58.3622416Z   DOCKER_METADATA_OUTPUT_VERSION: latest
+2026-02-15T18:57:58.3622932Z   DOCKER_METADATA_OUTPUT_TAGS: ghcr.io/marciommc/ssagsite:latest
+ghcr.io/marciommc/ssagsite:sha-013b3a6
+2026-02-15T18:57:58.3625290Z   DOCKER_METADATA_OUTPUT_LABELS: org.opencontainers.image.created=2026-02-15T18:57:58.328Z
+org.opencontainers.image.description=
+org.opencontainers.image.licenses=
+org.opencontainers.image.revision=013b3a6a355ea55aa472af042e6a03d62f81d401
+org.opencontainers.image.source=https://github.com/Marciommc/SSAGSite
+org.opencontainers.image.title=SSAGSite
+org.opencontainers.image.url=https://github.com/Marciommc/SSAGSite
+org.opencontainers.image.version=latest
+2026-02-15T18:57:58.3629193Z   DOCKER_METADATA_OUTPUT_JSON: {"tags":["ghcr.io/marciommc/ssagsite:latest","ghcr.io/marciommc/ssagsite:sha-013b3a6"],"labels":{"org.opencontainers.image.created":"2026-02-15T18:57:58.328Z","org.opencontainers.image.description":"","org.opencontainers.image.licenses":"","org.opencontainers.image.revision":"013b3a6a355ea55aa472af042e6a03d62f81d401","org.opencontainers.image.source":"https://github.com/Marciommc/SSAGSite","org.opencontainers.image.title":"SSAGSite","org.opencontainers.image.url":"https://github.com/Marciommc/SSAGSite","org.opencontainers.image.version":"latest"}}
+2026-02-15T18:57:58.3631579Z   DOCKER_METADATA_OUTPUT_BAKE_FILE: /tmp/docker-actions-toolkit-HnlS4c/docker-metadata-action-bake.json
+2026-02-15T18:57:58.3632087Z ##[endgroup]
+2026-02-15T18:57:58.5169217Z ##[group]GitHub Actions runtime token ACs
+2026-02-15T18:57:58.5189015Z refs/heads/main: read/write
+2026-02-15T18:57:58.5192121Z ##[endgroup]
+2026-02-15T18:57:58.5193154Z ##[group]Docker info
+2026-02-15T18:57:58.5255300Z [command]/usr/bin/docker version
+2026-02-15T18:57:58.5464702Z Client: Docker Engine - Community
+2026-02-15T18:57:58.5465395Z  Version:           29.1.5
+2026-02-15T18:57:58.5465931Z  API version:       1.52
+2026-02-15T18:57:58.5467064Z  Go version:        go1.25.6
+2026-02-15T18:57:58.5467588Z  Git commit:        0e6fee6
+2026-02-15T18:57:58.5468106Z  Built:             Fri Jan 16 12:48:47 2026
+2026-02-15T18:57:58.5468634Z  OS/Arch:           linux/amd64
+2026-02-15T18:57:58.5469095Z  Context:           default
+2026-02-15T18:57:58.5469301Z 
+2026-02-15T18:57:58.5469429Z Server: Docker Engine - Community
+2026-02-15T18:57:58.5469724Z  Engine:
+2026-02-15T18:57:58.5469945Z   Version:          29.1.5
+2026-02-15T18:57:58.5470249Z   API version:      1.52 (minimum version 1.44)
+2026-02-15T18:57:58.5470580Z   Go version:       go1.25.6
+2026-02-15T18:57:58.5470855Z   Git commit:       3b01d64
+2026-02-15T18:57:58.5471147Z   Built:            Fri Jan 16 12:48:47 2026
+2026-02-15T18:57:58.5471474Z   OS/Arch:          linux/amd64
+2026-02-15T18:57:58.5471763Z   Experimental:     false
+2026-02-15T18:57:58.5472082Z  containerd:
+2026-02-15T18:57:58.5472317Z   Version:          v2.2.1
+2026-02-15T18:57:58.5473061Z   GitCommit:        dea7da592f5d1d2b7755e3a161be07f43fad8f75
+2026-02-15T18:57:58.5473844Z  runc:
+2026-02-15T18:57:58.5474078Z   Version:          1.3.4
+2026-02-15T18:57:58.5474362Z   GitCommit:        v1.3.4-0-gd6d73eb8
+2026-02-15T18:57:58.5474669Z  docker-init:
+2026-02-15T18:57:58.5474915Z   Version:          0.19.0
+2026-02-15T18:57:58.5475269Z   GitCommit:        de40ad0
+2026-02-15T18:57:58.5519869Z [command]/usr/bin/docker info
+2026-02-15T18:57:58.7838656Z Client: Docker Engine - Community
+2026-02-15T18:57:58.7841422Z  Version:    29.1.5
+2026-02-15T18:57:58.7841870Z  Context:    default
+2026-02-15T18:57:58.7842279Z  Debug Mode: false
+2026-02-15T18:57:58.7842663Z  Plugins:
+2026-02-15T18:57:58.7843068Z   buildx: Docker Buildx (Docker Inc.)
+2026-02-15T18:57:58.7844075Z     Version:  v0.31.1
+2026-02-15T18:57:58.7844615Z     Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+2026-02-15T18:57:58.7845203Z   compose: Docker Compose (Docker Inc.)
+2026-02-15T18:57:58.7845670Z     Version:  v2.40.3
+2026-02-15T18:57:58.7846229Z     Path:     /usr/libexec/docker/cli-plugins/docker-compose
+2026-02-15T18:57:58.7846659Z 
+2026-02-15T18:57:58.7846802Z Server:
+2026-02-15T18:57:58.7847136Z  Containers: 0
+2026-02-15T18:57:58.7847498Z   Running: 0
+2026-02-15T18:57:58.7847839Z   Paused: 0
+2026-02-15T18:57:58.7848176Z   Stopped: 0
+2026-02-15T18:57:58.7848520Z  Images: 1
+2026-02-15T18:57:58.7848875Z  Server Version: 29.1.5
+2026-02-15T18:57:58.7849290Z  Storage Driver: overlayfs
+2026-02-15T18:57:58.7849871Z   driver-type: io.containerd.snapshotter.v1
+2026-02-15T18:57:58.7850400Z  Logging Driver: json-file
+2026-02-15T18:57:58.7850845Z  Cgroup Driver: systemd
+2026-02-15T18:57:58.7851248Z  Cgroup Version: 2
+2026-02-15T18:57:58.7851621Z  Plugins:
+2026-02-15T18:57:58.7851958Z   Volume: local
+2026-02-15T18:57:58.7852833Z   Network: bridge host ipvlan macvlan null overlay
+2026-02-15T18:57:58.7853770Z   Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+2026-02-15T18:57:58.7854469Z  CDI spec directories:
+2026-02-15T18:57:58.7854964Z   /etc/cdi
+2026-02-15T18:57:58.7855380Z   /var/run/cdi
+2026-02-15T18:57:58.7855635Z  Swarm: inactive
+2026-02-15T18:57:58.7856081Z  Runtimes: runc io.containerd.runc.v2
+2026-02-15T18:57:58.7856408Z  Default Runtime: runc
+2026-02-15T18:57:58.7856688Z  Init Binary: docker-init
+2026-02-15T18:57:58.7857061Z  containerd version: dea7da592f5d1d2b7755e3a161be07f43fad8f75
+2026-02-15T18:57:58.7857456Z  runc version: v1.3.4-0-gd6d73eb8
+2026-02-15T18:57:58.7857764Z  init version: de40ad0
+2026-02-15T18:57:58.7858020Z  Security Options:
+2026-02-15T18:57:58.7858246Z   apparmor
+2026-02-15T18:57:58.7858457Z   seccomp
+2026-02-15T18:57:58.7858666Z    Profile: builtin
+2026-02-15T18:57:58.7858893Z   cgroupns
+2026-02-15T18:57:58.7859132Z  Kernel Version: 6.14.0-1017-azure
+2026-02-15T18:57:58.7859465Z  Operating System: Ubuntu 24.04.3 LTS
+2026-02-15T18:57:58.7859754Z  OSType: linux
+2026-02-15T18:57:58.7859985Z  Architecture: x86_64
+2026-02-15T18:57:58.7860226Z  CPUs: 4
+2026-02-15T18:57:58.7860457Z  Total Memory: 15.62GiB
+2026-02-15T18:57:58.7860894Z  Name: runnervmjduv7
+2026-02-15T18:57:58.7861358Z  ID: 169aa517-19ec-4d49-bd61-4bb79f5886f6
+2026-02-15T18:57:58.7861904Z  Docker Root Dir: /var/lib/docker
+2026-02-15T18:57:58.7862374Z  Debug Mode: false
+2026-02-15T18:57:58.7862783Z  Username: githubactions
+2026-02-15T18:57:58.7863764Z  Experimental: false
+2026-02-15T18:57:58.7864264Z  Insecure Registries:
+2026-02-15T18:57:58.7869222Z   ::1/128
+2026-02-15T18:57:58.7869633Z   127.0.0.0/8
+2026-02-15T18:57:58.7870062Z  Live Restore Enabled: false
+2026-02-15T18:57:58.7870563Z  Firewall Backend: iptables
+2026-02-15T18:57:58.7870779Z 
+2026-02-15T18:57:58.7871382Z ##[endgroup]
+2026-02-15T18:57:58.7871823Z ##[group]Proxy configuration
+2026-02-15T18:57:58.7872129Z No proxy configuration found
+2026-02-15T18:57:58.7872617Z ##[endgroup]
+2026-02-15T18:57:58.8614483Z ##[group]Buildx version
+2026-02-15T18:57:58.8639609Z [command]/usr/bin/docker buildx version
+2026-02-15T18:57:58.9304335Z github.com/docker/buildx v0.31.1 a2675950d46b2cb171b23c2015ca44fb88607531
+2026-02-15T18:57:58.9350030Z ##[endgroup]
+2026-02-15T18:57:59.1658701Z [command]/usr/bin/docker buildx build --build-arg DATABASE_URL=*** --build-arg NEXTAUTH_SECRET= --iidfile /tmp/docker-actions-toolkit-jRW1tu/iidfile --label org.opencontainers.image.created=2026-02-15T18:57:58.328Z --label org.opencontainers.image.description= --label org.opencontainers.image.licenses= --label org.opencontainers.image.revision=013b3a6a355ea55aa472af042e6a03d62f81d401 --label org.opencontainers.image.source=https://github.com/Marciommc/SSAGSite --label org.opencontainers.image.title=SSAGSite --label org.opencontainers.image.url=https://github.com/Marciommc/SSAGSite --label org.opencontainers.image.version=latest --tag ghcr.io/marciommc/ssagsite:latest --tag ghcr.io/marciommc/ssagsite:sha-013b3a6 --metadata-file /tmp/docker-actions-toolkit-jRW1tu/metadata-file --push .
+2026-02-15T18:57:59.3755952Z #0 building with "default" instance using docker driver
+2026-02-15T18:57:59.3756636Z 
+2026-02-15T18:57:59.3757039Z #1 [internal] load build definition from Dockerfile
+2026-02-15T18:57:59.3759002Z #1 transferring dockerfile: 1.91kB done
+2026-02-15T18:57:59.3759901Z #1 DONE 0.0s
+2026-02-15T18:57:59.3760136Z 
+2026-02-15T18:57:59.3760442Z #2 [auth] library/node:pull token for registry-1.docker.io
+2026-02-15T18:57:59.5259597Z #2 DONE 0.0s
+2026-02-15T18:57:59.5259975Z 
+2026-02-15T18:57:59.5260337Z #3 [internal] load metadata for docker.io/library/node:20-alpine
+2026-02-15T18:57:59.8748772Z #3 DONE 0.6s
+2026-02-15T18:58:00.0115036Z 
+2026-02-15T18:58:00.0116968Z #4 [internal] load .dockerignore
+2026-02-15T18:58:00.0117499Z #4 transferring context: 2B done
+2026-02-15T18:58:00.0117953Z #4 DONE 0.0s
+2026-02-15T18:58:00.0118131Z 
+2026-02-15T18:58:00.0118292Z #5 [internal] load build context
+2026-02-15T18:58:00.0119136Z #5 transferring context: 502.75kB 0.0s done
+2026-02-15T18:58:00.0119586Z #5 DONE 0.1s
+2026-02-15T18:58:00.0119769Z 
+2026-02-15T18:58:00.0120433Z #6 [base 1/1] FROM docker.io/library/node:20-alpine@sha256:09e2b3d9726018aecf269bd35325f46bf75046a643a66d28360ec71132750ec8
+2026-02-15T18:58:00.0121870Z #6 resolve docker.io/library/node:20-alpine@sha256:09e2b3d9726018aecf269bd35325f46bf75046a643a66d28360ec71132750ec8 0.0s done
+2026-02-15T18:58:00.0123182Z #6 sha256:e31b2016552274339ed88ed4a438d78bf37e0f6bdf328d02207b2a598c1ef86d 445B / 445B 0.1s done
+2026-02-15T18:58:00.1929070Z #6 sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6ee0f8eaa0285cc21ac153 3.86MB / 3.86MB 0.1s done
+2026-02-15T18:58:00.1929997Z #6 sha256:eb87f4721c91769ed5206f34a9ab6ec98fc1d5235c12c2fc956665b1155e9ecb 1.26MB / 1.26MB 0.1s done
+2026-02-15T18:58:00.1930669Z #6 extracting sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6ee0f8eaa0285cc21ac153 0.1s done
+2026-02-15T18:58:00.1931304Z #6 sha256:ad6d96c196e3198e14ea37df8bba4f54bf92fb525eb65e49fa4027c7dee13f80 3.15MB / 42.78MB 0.2s
+2026-02-15T18:58:00.4072128Z #6 sha256:ad6d96c196e3198e14ea37df8bba4f54bf92fb525eb65e49fa4027c7dee13f80 42.78MB / 42.78MB 0.5s
+2026-02-15T18:58:00.5637252Z #6 sha256:ad6d96c196e3198e14ea37df8bba4f54bf92fb525eb65e49fa4027c7dee13f80 42.78MB / 42.78MB 0.5s done
+2026-02-15T18:58:00.5638563Z #6 extracting sha256:ad6d96c196e3198e14ea37df8bba4f54bf92fb525eb65e49fa4027c7dee13f80
+2026-02-15T18:58:01.3224037Z #6 extracting sha256:ad6d96c196e3198e14ea37df8bba4f54bf92fb525eb65e49fa4027c7dee13f80 0.9s done
+2026-02-15T18:58:01.3224918Z #6 DONE 1.4s
+2026-02-15T18:58:01.5077189Z 
+2026-02-15T18:58:01.5078426Z #6 [base 1/1] FROM docker.io/library/node:20-alpine@sha256:09e2b3d9726018aecf269bd35325f46bf75046a643a66d28360ec71132750ec8
+2026-02-15T18:58:01.5079940Z #6 extracting sha256:eb87f4721c91769ed5206f34a9ab6ec98fc1d5235c12c2fc956665b1155e9ecb 0.0s done
+2026-02-15T18:58:01.5080924Z #6 extracting sha256:e31b2016552274339ed88ed4a438d78bf37e0f6bdf328d02207b2a598c1ef86d done
+2026-02-15T18:58:01.5081764Z #6 DONE 1.5s
+2026-02-15T18:58:01.5081998Z 
+2026-02-15T18:58:01.5082200Z #7 [deps 1/4] RUN apk add --no-cache libc6-compat
+2026-02-15T18:58:02.3056525Z #7 0.948 (1/3) Installing musl-obstack (1.2.3-r2)
+2026-02-15T18:58:02.7256664Z #7 1.368 (2/3) Installing libucontext (1.3.3-r0)
+2026-02-15T18:58:02.8442011Z #7 1.373 (3/3) Installing gcompat (1.1.0-r4)
+2026-02-15T18:58:02.8445906Z #7 1.427 OK: 11.0 MiB in 21 packages
+2026-02-15T18:58:02.8447766Z #7 DONE 1.5s
+2026-02-15T18:58:02.8447971Z 
+2026-02-15T18:58:02.8448119Z #8 [builder 1/5] WORKDIR /app
+2026-02-15T18:58:02.8448493Z #8 DONE 1.4s
+2026-02-15T18:58:02.8448676Z 
+2026-02-15T18:58:02.8448911Z #9 [runner 2/8] RUN addgroup --system --gid 1001 nodejs
+2026-02-15T18:58:02.9698424Z #9 DONE 0.2s
+2026-02-15T18:58:02.9698726Z 
+2026-02-15T18:58:02.9705086Z #10 [deps 2/4] WORKDIR /app
+2026-02-15T18:58:02.9706114Z #10 DONE 0.0s
+2026-02-15T18:58:02.9707479Z 
+2026-02-15T18:58:02.9708110Z #11 [deps 3/4] COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
+2026-02-15T18:58:02.9709736Z #11 DONE 0.0s
+2026-02-15T18:58:02.9709918Z 
+2026-02-15T18:58:02.9711235Z #12 [deps 4/4] RUN     if [ -f yarn.lock ]; then yarn --frozen-lockfile;     elif [ -f package-lock.json ]; then npm ci;     elif [ -f pnpm-lock.yaml ]; then yarn global add pnpm && pnpm i --frozen-lockfile;     else echo "Lockfile not found." && exit 1;     fi
+2026-02-15T18:58:03.1579832Z #12 ...
+2026-02-15T18:58:03.1580094Z 
+2026-02-15T18:58:03.1580368Z #13 [runner 3/8] RUN adduser --system --uid 1001 nextjs
+2026-02-15T18:58:03.1580899Z #13 DONE 0.2s
+2026-02-15T18:58:03.3081851Z 
+2026-02-15T18:58:03.3084040Z #12 [deps 4/4] RUN     if [ -f yarn.lock ]; then yarn --frozen-lockfile;     elif [ -f package-lock.json ]; then npm ci;     elif [ -f pnpm-lock.yaml ]; then yarn global add pnpm && pnpm i --frozen-lockfile;     else echo "Lockfile not found." && exit 1;     fi
+2026-02-15T18:58:19.0420711Z #12 16.14 
+2026-02-15T18:58:19.0421205Z #12 16.14 added 463 packages, and audited 464 packages in 16s
+2026-02-15T18:58:19.2872686Z #12 16.14 
+2026-02-15T18:58:19.2873013Z #12 16.14 160 packages are looking for funding
+2026-02-15T18:58:19.2873686Z #12 16.14   run `npm fund` for details
+2026-02-15T18:58:19.2874128Z #12 16.23 
+2026-02-15T18:58:19.2874348Z #12 16.23 8 moderate severity vulnerabilities
+2026-02-15T18:58:19.2874612Z #12 16.23 
+2026-02-15T18:58:19.2874860Z #12 16.23 To address issues that do not require attention, run:
+2026-02-15T18:58:19.2875188Z #12 16.23   npm audit fix
+2026-02-15T18:58:19.2875400Z #12 16.23 
+2026-02-15T18:58:19.2875650Z #12 16.23 To address all issues (including breaking changes), run:
+2026-02-15T18:58:19.2875997Z #12 16.23   npm audit fix --force
+2026-02-15T18:58:19.2876223Z #12 16.23 
+2026-02-15T18:58:19.2876404Z #12 16.23 Run `npm audit` for details.
+2026-02-15T18:58:19.2876650Z #12 16.23 npm notice
+2026-02-15T18:58:19.2876941Z #12 16.23 npm notice New major version of npm available! 10.8.2 -> 11.10.0
+2026-02-15T18:58:19.2877470Z #12 16.23 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.10.0
+2026-02-15T18:58:19.2877954Z #12 16.23 npm notice To update run: npm install -g npm@11.10.0
+2026-02-15T18:58:19.2878278Z #12 16.23 npm notice
+2026-02-15T18:58:21.3326341Z #12 DONE 18.4s
+2026-02-15T18:58:23.7039073Z 
+2026-02-15T18:58:23.7040165Z #14 [builder 2/5] COPY --from=deps /app/node_modules ./node_modules
+2026-02-15T18:58:29.1900498Z #14 DONE 5.5s
+2026-02-15T18:58:29.3434668Z 
+2026-02-15T18:58:29.3435105Z #15 [builder 3/5] COPY . .
+2026-02-15T18:58:29.4365982Z #15 DONE 0.2s
+2026-02-15T18:58:29.5878941Z 
+2026-02-15T18:58:29.5879425Z #16 [builder 4/5] RUN npx prisma generate
+2026-02-15T18:58:31.1201090Z #16 1.682 Prisma schema loaded from prisma/schema.prisma.
+2026-02-15T18:58:31.2242282Z #16 1.685 Error: Prisma schema validation - (get-config wasm)
+2026-02-15T18:58:31.2251717Z #16 1.685 Error code: P1012
+2026-02-15T18:58:31.2256190Z #16 1.685 error: The datasource property `url` is no longer supported in schema files. Move connection URLs for Migrate to `prisma.config.ts` and pass either `adapter` for a direct database connection or `accelerateUrl` for Accelerate to the `PrismaClient` constructor. See https://pris.ly/d/config-datasource and https://pris.ly/d/prisma7-client-config
+2026-02-15T18:58:31.2258551Z #16 1.685   -->  prisma/schema.prisma:7
+2026-02-15T18:58:31.2258951Z #16 1.685    | 
+2026-02-15T18:58:31.2259256Z #16 1.685  6 |   provider = "postgresql"
+2026-02-15T18:58:31.2259687Z #16 1.685  7 |   url      = env("DATABASE_URL")
+2026-02-15T18:58:31.2260104Z #16 1.685    | 
+2026-02-15T18:58:31.2260371Z #16 1.685 
+2026-02-15T18:58:31.2260650Z #16 1.685 Validation Error Count: 1
+2026-02-15T18:58:31.2261038Z #16 1.685 [Context: getConfig]
+2026-02-15T18:58:31.2261373Z #16 1.685 
+2026-02-15T18:58:31.2261657Z #16 1.685 Prisma CLI Version : 7.4.0
+2026-02-15T18:58:31.2262019Z #16 1.709 npm notice
+2026-02-15T18:58:31.2262472Z #16 1.709 npm notice New major version of npm available! 10.8.2 -> 11.10.0
+2026-02-15T18:58:31.2263839Z #16 1.709 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.10.0
+2026-02-15T18:58:31.2264779Z #16 1.709 npm notice To update run: npm install -g npm@11.10.0
+2026-02-15T18:58:31.2265246Z #16 1.709 npm notice
+2026-02-15T18:58:31.2265842Z #16 ERROR: process "/bin/sh -c npx prisma generate" did not complete successfully: exit code: 1
+2026-02-15T18:58:31.2266514Z ------
+2026-02-15T18:58:31.2266846Z  > [builder 4/5] RUN npx prisma generate:
+2026-02-15T18:58:31.2267275Z 1.685 
+2026-02-15T18:58:31.2267579Z 1.685 Validation Error Count: 1
+2026-02-15T18:58:31.2267949Z 1.685 [Context: getConfig]
+2026-02-15T18:58:31.2268140Z 1.685 
+2026-02-15T18:58:31.2268464Z 1.685 Prisma CLI Version : 7.4.0
+2026-02-15T18:58:31.2268847Z 1.709 npm notice
+2026-02-15T18:58:31.2269168Z 1.709 npm notice New major version of npm available! 10.8.2 -> 11.10.0
+2026-02-15T18:58:31.2269917Z 1.709 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.10.0
+2026-02-15T18:58:31.2270668Z 1.709 npm notice To update run: npm install -g npm@11.10.0
+2026-02-15T18:58:31.2271647Z 1.709 npm notice
+2026-02-15T18:58:31.2271884Z ------
+2026-02-15T18:58:31.2294957Z 
+2026-02-15T18:58:31.2295676Z  [33m5 warnings found (use docker --debug to expand):
+2026-02-15T18:58:31.2301475Z [0m - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 28)
+2026-02-15T18:58:31.2309391Z  - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 39)
+2026-02-15T18:58:31.2310603Z  - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 40)
+2026-02-15T18:58:31.2311801Z  - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 60)
+2026-02-15T18:58:31.2320329Z  - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 62)
+2026-02-15T18:58:31.2321280Z Dockerfile:31
+2026-02-15T18:58:31.2321709Z --------------------
+2026-02-15T18:58:31.2322022Z   29 |     
+2026-02-15T18:58:31.2324799Z   30 |     # Generate Prisma Client
+2026-02-15T18:58:31.2329987Z   31 | >>> RUN npx prisma generate
+2026-02-15T18:58:31.2330391Z   32 |     
+2026-02-15T18:58:31.2330654Z   33 |     RUN npm run build
+2026-02-15T18:58:31.2331008Z --------------------
+2026-02-15T18:58:31.2331809Z ERROR: failed to build: failed to solve: process "/bin/sh -c npx prisma generate" did not complete successfully: exit code: 1
+2026-02-15T18:58:31.2420534Z ##[error]buildx failed with: ERROR: failed to build: failed to solve: process "/bin/sh -c npx prisma generate" did not complete successfully: exit code: 1
+2026-02-15T18:58:31.2586995Z Post job cleanup.
+2026-02-15T18:58:31.3991705Z ##[group]Removing temp folder /tmp/docker-actions-toolkit-jRW1tu
+2026-02-15T18:58:31.4001342Z ##[endgroup]
+2026-02-15T18:58:31.4109757Z Post job cleanup.
+2026-02-15T18:58:31.5139810Z [command]/usr/bin/docker logout ghcr.io
+2026-02-15T18:58:31.5259896Z Removing login credentials for ghcr.io
+2026-02-15T18:58:31.5409241Z Post job cleanup.
+2026-02-15T18:58:31.6156126Z [command]/usr/bin/git version
+2026-02-15T18:58:31.6192887Z git version 2.52.0
+2026-02-15T18:58:31.6237555Z Temporarily overriding HOME='/home/runner/work/_temp/9f1efd7f-840e-4323-88ab-afc8ca9a08eb' before making global git config changes
+2026-02-15T18:58:31.6238811Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-15T18:58:31.6241686Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/SSAGSite/SSAGSite
+2026-02-15T18:58:31.6275278Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-15T18:58:31.6306873Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-15T18:58:31.6567317Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-15T18:58:31.6596525Z http.https://github.com/.extraheader
+2026-02-15T18:58:31.6609536Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-02-15T18:58:31.6646137Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-02-15T18:58:31.7026155Z Cleaning up orphan processes

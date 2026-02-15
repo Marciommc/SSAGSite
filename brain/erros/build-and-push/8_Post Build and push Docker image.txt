@@ -1,0 +1,3 @@
+﻿2026-02-15T18:58:31.2586982Z Post job cleanup.
+2026-02-15T18:58:31.3991667Z ##[group]Removing temp folder /tmp/docker-actions-toolkit-jRW1tu
+2026-02-15T18:58:31.4001336Z ##[endgroup]

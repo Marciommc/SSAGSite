@@ -1,0 +1,30 @@
+# Tarefas
+
+- [x] Fase 1 - Refatoração Base (Nova Stack + Estrutura) <!-- id: 0 -->
+    - [x] Criar Projeto Next.js (ssag-web) <!-- id: 1 -->
+    - [x] Configurar Docker (docker-compose, postgres) <!-- id: 2 -->
+    - [x] Configurar Tailwind CSS & Design System <!-- id: 3 -->
+    - [x] Refatorar Páginas (Início, ERP, Soluções, PDI, Consultoria, etc) <!-- id: 4 -->
+    - [x] Implementar Componentes de Cabeçalho/Rodapé <!-- id: 5 -->
+    - [x] Implementar SEO Dinâmico <!-- id: 6 -->
+- [x] Fase 2 - Banco de Dados & Captação de Leads <!-- id: 7 -->
+    - [x] Configurar Prisma ORM <!-- id: 8 -->
+    - [x] Criar Rotas de API (leads) <!-- id: 9 -->
+    - [x] Conectar Formulário de Contato <!-- id: 10 -->
+- [x] Fase 3 - Área Administrativa Interna <!-- id: 11 -->
+    - [x] Criar rota /admin <!-- id: 12 -->
+    - [x] Autenticação Simples <!-- id: 13 -->
+    - [x] Dashboard (Visualização de Leads) <!-- id: 14 -->
+- [x] Fase 4 - Marketing & Posicionamento <!-- id: 15 -->
+    - [x] Criar /ecossistema <!-- id: 16 -->
+    - [x] Criar /cases <!-- id: 17 -->
+    - [x] Refinar Conteúdo (Copywriting) <!-- id: 18 -->
+- [x] Fase 5 - Conteúdo & SEO <!-- id: 19 -->
+    - [x] Configurar Estrutura do Blog <!-- id: 20 -->
+    - [x] Artigos Iniciais <!-- id: 21 -->
+- [ ] Fase 6 - Versionamento e Deploy (Novo) <!-- id: 22 -->
+    - [x] Analisar referência de deploy (Inovam) <!-- id: 23 -->
+    - [x] Analisar Logs de Erro (Inovam) <!-- id: 24 -->
+    - [ ] Corrigir Estrutura do Git (Repo na Raiz SSAGSite) <!-- id: 25 -->
+    - [ ] Mover/Configurar pastas `brain` e `docs` <!-- id: 26 -->
+    - [ ] Atualizar Remote e Push (Force) <!-- id: 27 -->

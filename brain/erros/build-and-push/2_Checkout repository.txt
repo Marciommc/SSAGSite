@@ -1,0 +1,184 @@
+﻿2026-02-15T18:57:57.0145641Z ##[group]Run actions/checkout@v3
+2026-02-15T18:57:57.0147049Z with:
+2026-02-15T18:57:57.0147840Z   repository: Marciommc/SSAGSite
+2026-02-15T18:57:57.0149173Z   token: ***
+2026-02-15T18:57:57.0149944Z   ssh-strict: true
+2026-02-15T18:57:57.0150781Z   persist-credentials: true
+2026-02-15T18:57:57.0151674Z   clean: true
+2026-02-15T18:57:57.0152485Z   sparse-checkout-cone-mode: true
+2026-02-15T18:57:57.0153637Z   fetch-depth: 1
+2026-02-15T18:57:57.0154427Z   fetch-tags: false
+2026-02-15T18:57:57.0155218Z   lfs: false
+2026-02-15T18:57:57.0155959Z   submodules: false
+2026-02-15T18:57:57.0156796Z   set-safe-directory: true
+2026-02-15T18:57:57.0157935Z env:
+2026-02-15T18:57:57.0158647Z   REGISTRY: ghcr.io
+2026-02-15T18:57:57.0159485Z   IMAGE_NAME: Marciommc/SSAGSite
+2026-02-15T18:57:57.0160434Z ##[endgroup]
+2026-02-15T18:57:57.1084705Z Syncing repository: Marciommc/SSAGSite
+2026-02-15T18:57:57.1087628Z ##[group]Getting Git version info
+2026-02-15T18:57:57.1088974Z Working directory is '/home/runner/work/SSAGSite/SSAGSite'
+2026-02-15T18:57:57.1090995Z [command]/usr/bin/git version
+2026-02-15T18:57:57.1094448Z git version 2.52.0
+2026-02-15T18:57:57.1123028Z ##[endgroup]
+2026-02-15T18:57:57.1141830Z Temporarily overriding HOME='/home/runner/work/_temp/6cce5017-2ba2-4e1f-8be4-fc333e334453' before making global git config changes
+2026-02-15T18:57:57.1146746Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-15T18:57:57.1149422Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/SSAGSite/SSAGSite
+2026-02-15T18:57:57.1188767Z Deleting the contents of '/home/runner/work/SSAGSite/SSAGSite'
+2026-02-15T18:57:57.1193647Z ##[group]Initializing the repository
+2026-02-15T18:57:57.1196496Z [command]/usr/bin/git init /home/runner/work/SSAGSite/SSAGSite
+2026-02-15T18:57:57.1298355Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-02-15T18:57:57.1301832Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-02-15T18:57:57.1305737Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-02-15T18:57:57.1308527Z hint: call:
+2026-02-15T18:57:57.1310157Z hint:
+2026-02-15T18:57:57.1311793Z hint: 	git config --global init.defaultBranch <name>
+2026-02-15T18:57:57.1314041Z hint:
+2026-02-15T18:57:57.1315998Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-02-15T18:57:57.1319157Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-02-15T18:57:57.1321537Z hint:
+2026-02-15T18:57:57.1322862Z hint: 	git branch -m <name>
+2026-02-15T18:57:57.1324421Z hint:
+2026-02-15T18:57:57.1325820Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-02-15T18:57:57.1327943Z Initialized empty Git repository in /home/runner/work/SSAGSite/SSAGSite/.git/
+2026-02-15T18:57:57.1333017Z [command]/usr/bin/git remote add origin https://github.com/Marciommc/SSAGSite
+2026-02-15T18:57:57.1357186Z ##[endgroup]
+2026-02-15T18:57:57.1359667Z ##[group]Disabling automatic garbage collection
+2026-02-15T18:57:57.1361938Z [command]/usr/bin/git config --local gc.auto 0
+2026-02-15T18:57:57.1392920Z ##[endgroup]
+2026-02-15T18:57:57.1395436Z ##[group]Setting up auth
+2026-02-15T18:57:57.1399417Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-15T18:57:57.1434157Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-15T18:57:57.1789287Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-15T18:57:57.1821064Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-02-15T18:57:57.2080177Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-02-15T18:57:57.2125953Z ##[endgroup]
+2026-02-15T18:57:57.2128405Z ##[group]Fetching the repository
+2026-02-15T18:57:57.2136283Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +013b3a6a355ea55aa472af042e6a03d62f81d401:refs/remotes/origin/main
+2026-02-15T18:57:57.4082689Z remote: Enumerating objects: 67, done.        
+2026-02-15T18:57:57.4086854Z remote: Counting objects:   1% (1/67)        
+2026-02-15T18:57:57.4088875Z remote: Counting objects:   2% (2/67)        
+2026-02-15T18:57:57.4090848Z remote: Counting objects:   4% (3/67)        
+2026-02-15T18:57:57.4092577Z remote: Counting objects:   5% (4/67)        
+2026-02-15T18:57:57.4094747Z remote: Counting objects:   7% (5/67)        
+2026-02-15T18:57:57.4096804Z remote: Counting objects:   8% (6/67)        
+2026-02-15T18:57:57.4098780Z remote: Counting objects:  10% (7/67)        
+2026-02-15T18:57:57.4100693Z remote: Counting objects:  11% (8/67)        
+2026-02-15T18:57:57.4102620Z remote: Counting objects:  13% (9/67)        
+2026-02-15T18:57:57.4104551Z remote: Counting objects:  14% (10/67)        
+2026-02-15T18:57:57.4105746Z remote: Counting objects:  16% (11/67)        
+2026-02-15T18:57:57.4106931Z remote: Counting objects:  17% (12/67)        
+2026-02-15T18:57:57.4108095Z remote: Counting objects:  19% (13/67)        
+2026-02-15T18:57:57.4109248Z remote: Counting objects:  20% (14/67)        
+2026-02-15T18:57:57.4110622Z remote: Counting objects:  22% (15/67)        
+2026-02-15T18:57:57.4111821Z remote: Counting objects:  23% (16/67)        
+2026-02-15T18:57:57.4112977Z remote: Counting objects:  25% (17/67)        
+2026-02-15T18:57:57.4114354Z remote: Counting objects:  26% (18/67)        
+2026-02-15T18:57:57.4115517Z remote: Counting objects:  28% (19/67)        
+2026-02-15T18:57:57.4116989Z remote: Counting objects:  29% (20/67)        
+2026-02-15T18:57:57.4118158Z remote: Counting objects:  31% (21/67)        
+2026-02-15T18:57:57.4119325Z remote: Counting objects:  32% (22/67)        
+2026-02-15T18:57:57.4120498Z remote: Counting objects:  34% (23/67)        
+2026-02-15T18:57:57.4121650Z remote: Counting objects:  35% (24/67)        
+2026-02-15T18:57:57.4122810Z remote: Counting objects:  37% (25/67)        
+2026-02-15T18:57:57.4124235Z remote: Counting objects:  38% (26/67)        
+2026-02-15T18:57:57.4125404Z remote: Counting objects:  40% (27/67)        
+2026-02-15T18:57:57.4126559Z remote: Counting objects:  41% (28/67)        
+2026-02-15T18:57:57.4127708Z remote: Counting objects:  43% (29/67)        
+2026-02-15T18:57:57.4128847Z remote: Counting objects:  44% (30/67)        
+2026-02-15T18:57:57.4130140Z remote: Counting objects:  46% (31/67)        
+2026-02-15T18:57:57.4131296Z remote: Counting objects:  47% (32/67)        
+2026-02-15T18:57:57.4132460Z remote: Counting objects:  49% (33/67)        
+2026-02-15T18:57:57.4133818Z remote: Counting objects:  50% (34/67)        
+2026-02-15T18:57:57.4134988Z remote: Counting objects:  52% (35/67)        
+2026-02-15T18:57:57.4136383Z remote: Counting objects:  53% (36/67)        
+2026-02-15T18:57:57.4137594Z remote: Counting objects:  55% (37/67)        
+2026-02-15T18:57:57.4139329Z remote: Counting objects:  56% (38/67)        
+2026-02-15T18:57:57.4140619Z remote: Counting objects:  58% (39/67)        
+2026-02-15T18:57:57.4141850Z remote: Counting objects:  59% (40/67)        
+2026-02-15T18:57:57.4143163Z remote: Counting objects:  61% (41/67)        
+2026-02-15T18:57:57.4144706Z remote: Counting objects:  62% (42/67)        
+2026-02-15T18:57:57.4145968Z remote: Counting objects:  64% (43/67)        
+2026-02-15T18:57:57.4147304Z remote: Counting objects:  65% (44/67)        
+2026-02-15T18:57:57.4148584Z remote: Counting objects:  67% (45/67)        
+2026-02-15T18:57:57.4149855Z remote: Counting objects:  68% (46/67)        
+2026-02-15T18:57:57.4151172Z remote: Counting objects:  70% (47/67)        
+2026-02-15T18:57:57.4152465Z remote: Counting objects:  71% (48/67)        
+2026-02-15T18:57:57.4154166Z remote: Counting objects:  73% (49/67)        
+2026-02-15T18:57:57.4155474Z remote: Counting objects:  74% (50/67)        
+2026-02-15T18:57:57.4156754Z remote: Counting objects:  76% (51/67)        
+2026-02-15T18:57:57.4158002Z remote: Counting objects:  77% (52/67)        
+2026-02-15T18:57:57.4159330Z remote: Counting objects:  79% (53/67)        
+2026-02-15T18:57:57.4160584Z remote: Counting objects:  80% (54/67)        
+2026-02-15T18:57:57.4161797Z remote: Counting objects:  82% (55/67)        
+2026-02-15T18:57:57.4163124Z remote: Counting objects:  83% (56/67)        
+2026-02-15T18:57:57.4164950Z remote: Counting objects:  85% (57/67)        
+2026-02-15T18:57:57.4166185Z remote: Counting objects:  86% (58/67)        
+2026-02-15T18:57:57.4167623Z remote: Counting objects:  88% (59/67)        
+2026-02-15T18:57:57.4168910Z remote: Counting objects:  89% (60/67)        
+2026-02-15T18:57:57.4170189Z remote: Counting objects:  91% (61/67)        
+2026-02-15T18:57:57.4171482Z remote: Counting objects:  92% (62/67)        
+2026-02-15T18:57:57.4172746Z remote: Counting objects:  94% (63/67)        
+2026-02-15T18:57:57.4174276Z remote: Counting objects:  95% (64/67)        
+2026-02-15T18:57:57.4175629Z remote: Counting objects:  97% (65/67)        
+2026-02-15T18:57:57.4176914Z remote: Counting objects:  98% (66/67)        
+2026-02-15T18:57:57.4178149Z remote: Counting objects: 100% (67/67)        
+2026-02-15T18:57:57.4179486Z remote: Counting objects: 100% (67/67), done.        
+2026-02-15T18:57:57.4180833Z remote: Compressing objects:   2% (1/44)        
+2026-02-15T18:57:57.4182146Z remote: Compressing objects:   4% (2/44)        
+2026-02-15T18:57:57.4183860Z remote: Compressing objects:   6% (3/44)        
+2026-02-15T18:57:57.4185240Z remote: Compressing objects:   9% (4/44)        
+2026-02-15T18:57:57.4186696Z remote: Compressing objects:  11% (5/44)        
+2026-02-15T18:57:57.4188084Z remote: Compressing objects:  13% (6/44)        
+2026-02-15T18:57:57.4189397Z remote: Compressing objects:  15% (7/44)        
+2026-02-15T18:57:57.4190693Z remote: Compressing objects:  18% (8/44)        
+2026-02-15T18:57:57.4192102Z remote: Compressing objects:  20% (9/44)        
+2026-02-15T18:57:57.4193639Z remote: Compressing objects:  22% (10/44)        
+2026-02-15T18:57:57.4194920Z remote: Compressing objects:  25% (11/44)        
+2026-02-15T18:57:57.4196307Z remote: Compressing objects:  27% (12/44)        
+2026-02-15T18:57:57.4197634Z remote: Compressing objects:  29% (13/44)        
+2026-02-15T18:57:57.4198923Z remote: Compressing objects:  31% (14/44)        
+2026-02-15T18:57:57.4200286Z remote: Compressing objects:  34% (15/44)        
+2026-02-15T18:57:57.4201595Z remote: Compressing objects:  36% (16/44)        
+2026-02-15T18:57:57.4202865Z remote: Compressing objects:  38% (17/44)        
+2026-02-15T18:57:57.4204399Z remote: Compressing objects:  40% (18/44)        
+2026-02-15T18:57:57.4205759Z remote: Compressing objects:  43% (19/44)        
+2026-02-15T18:57:57.4207022Z remote: Compressing objects:  45% (20/44)        
+2026-02-15T18:57:57.4208383Z remote: Compressing objects:  47% (21/44)        
+2026-02-15T18:57:57.4209692Z remote: Compressing objects:  50% (22/44)        
+2026-02-15T18:57:57.4210987Z remote: Compressing objects:  52% (23/44)        
+2026-02-15T18:57:57.4212354Z remote: Compressing objects:  54% (24/44)        
+2026-02-15T18:57:57.4213736Z remote: Compressing objects:  56% (25/44)        
+2026-02-15T18:57:57.4215081Z remote: Compressing objects:  59% (26/44)        
+2026-02-15T18:57:57.4216463Z remote: Compressing objects:  61% (27/44)        
+2026-02-15T18:57:57.4217740Z remote: Compressing objects:  63% (28/44)        
+2026-02-15T18:57:57.4219049Z remote: Compressing objects:  65% (29/44)        
+2026-02-15T18:57:57.4220426Z remote: Compressing objects:  68% (30/44)        
+2026-02-15T18:57:57.4221748Z remote: Compressing objects:  70% (31/44)        
+2026-02-15T18:57:57.4223062Z remote: Compressing objects:  72% (32/44)        
+2026-02-15T18:57:57.4224649Z remote: Compressing objects:  75% (33/44)        
+2026-02-15T18:57:57.4226127Z remote: Compressing objects:  77% (34/44)        
+2026-02-15T18:57:57.4227457Z remote: Compressing objects:  79% (35/44)        
+2026-02-15T18:57:57.4228829Z remote: Compressing objects:  81% (36/44)        
+2026-02-15T18:57:57.4230137Z remote: Compressing objects:  84% (37/44)        
+2026-02-15T18:57:57.4231436Z remote: Compressing objects:  86% (38/44)        
+2026-02-15T18:57:57.4233156Z remote: Compressing objects:  88% (39/44)        
+2026-02-15T18:57:57.4234838Z remote: Compressing objects:  90% (40/44)        
+2026-02-15T18:57:57.4236382Z remote: Compressing objects:  93% (41/44)        
+2026-02-15T18:57:57.4238054Z remote: Compressing objects:  95% (42/44)        
+2026-02-15T18:57:57.4239366Z remote: Compressing objects:  97% (43/44)        
+2026-02-15T18:57:57.4240714Z remote: Compressing objects: 100% (44/44)        
+2026-02-15T18:57:57.4242147Z remote: Compressing objects: 100% (44/44), done.        
+2026-02-15T18:57:57.4427021Z remote: Total 67 (delta 7), reused 67 (delta 7), pack-reused 0 (from 0)        
+2026-02-15T18:57:57.4547634Z From https://github.com/Marciommc/SSAGSite
+2026-02-15T18:57:57.4550558Z  * [new ref]         013b3a6a355ea55aa472af042e6a03d62f81d401 -> origin/main
+2026-02-15T18:57:57.4587511Z ##[endgroup]
+2026-02-15T18:57:57.4589743Z ##[group]Determining the checkout info
+2026-02-15T18:57:57.4591525Z ##[endgroup]
+2026-02-15T18:57:57.4593822Z ##[group]Checking out the ref
+2026-02-15T18:57:57.4595472Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-02-15T18:57:57.4694555Z Switched to a new branch 'main'
+2026-02-15T18:57:57.4697369Z branch 'main' set up to track 'origin/main'.
+2026-02-15T18:57:57.4704885Z ##[endgroup]
+2026-02-15T18:57:57.4740529Z [command]/usr/bin/git log -1 --format='%H'
+2026-02-15T18:57:57.4764670Z '013b3a6a355ea55aa472af042e6a03d62f81d401'

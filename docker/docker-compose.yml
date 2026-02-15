@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  ssag-db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: ssag
+      POSTGRES_PASSWORD: ssag
+      POSTGRES_DB: ssag_site
+    ports:
+      - "5432:5432"
+    volumes:
+      - ssag_db_data:/var/lib/postgresql/data
+    networks:
+      - ssag-network
+
+networks:
+  ssag-network:
+    driver: bridge
+
+volumes:
+  ssag_db_data:
