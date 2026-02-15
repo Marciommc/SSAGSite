@@ -102,7 +102,7 @@ jobs:
             sleep 10
 
             # Apply database migrations (schema push for safety in early dev)
-            docker exec -u root ssag-site npx prisma@5.22.0 db push
+            docker exec -u root ssag-site npx prisma@5.22.0 db push --skip-generate
 
             # Prune old images
             docker image prune -f
