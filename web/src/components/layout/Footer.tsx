@@ -21,7 +21,7 @@ const navigation = {
 
 export default function Footer() {
     return (
-        <footer className="bg-primary text-white" aria-labelledby="footer-heading">
+        <footer className="bg-[#3e4e62] text-white" aria-labelledby="footer-heading">
             <h2 id="footer-heading" className="sr-only">
                 Rodapé
             </h2>
@@ -29,7 +29,7 @@ export default function Footer() {
                 <div className="xl:grid xl:grid-cols-3 xl:gap-8">
                     <div className="space-y-8">
                         <h1 className="text-2xl font-bold text-white tracking-widest font-heading">
-                            SSAG<span className="text-secondary">.</span>
+                            SSAG<span className="text-[#fa5252]">.</span>
                         </h1>
                         <p className="text-sm leading-6 text-gray-300">
                             Engenharia de Software e Gestão Governada por Metamodelo.
