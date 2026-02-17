@@ -11,13 +11,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 1,
         },
         {
-            url: `${baseUrl}/erp`,
+            url: `${baseUrl}/software-house`,
             lastModified: new Date(),
             changeFrequency: "monthly",
-            priority: 0.8,
+            priority: 0.9,
         },
         {
-            url: `${baseUrl}/solucoes`,
+            url: `${baseUrl}/cloud`,
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/erp`,
             lastModified: new Date(),
             changeFrequency: "monthly",
             priority: 0.8,
@@ -44,13 +50,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: `${baseUrl}/cases`,
             lastModified: new Date(),
             changeFrequency: "monthly",
-            priority: 0.8,
+            priority: 0.7,
         },
         {
             url: `${baseUrl}/contato`,
             lastModified: new Date(),
             changeFrequency: "monthly",
             priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/blog`,
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.7,
         },
     ];
 }
