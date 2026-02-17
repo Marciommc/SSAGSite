@@ -20,7 +20,7 @@ export default function Header() {
     const pathname = usePathname();
 
     return (
-        <header className="fixed w-full z-50 bg-primary/95 backdrop-blur-sm shadow-md transition-all">
+        <header className="fixed w-full z-50 bg-ssag-blue backdrop-blur-sm shadow-md transition-all">
             <nav
                 className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
                 aria-label="Global"
@@ -30,7 +30,7 @@ export default function Header() {
                         <span className="sr-only">SSAG Tecnologia</span>
                         {/* Placeholder for Logo - Replace with Image later */}
                         <h1 className="text-2xl font-bold text-white tracking-widest font-heading">
-                            SSAG<span className="text-secondary">.</span>
+                            SSAG<span className="text-ssag-red">.</span>
                         </h1>
                     </Link>
                 </div>
@@ -63,8 +63,8 @@ export default function Header() {
                             key={item.name}
                             href={item.href}
                             className={`text-sm font-semibold leading-6 transition-colors ${pathname === item.href
-                                    ? "text-secondary"
-                                    : "text-white hover:text-secondary"
+                                ? "text-secondary"
+                                : "text-white hover:text-secondary"
                                 }`}
                         >
                             {item.name}
