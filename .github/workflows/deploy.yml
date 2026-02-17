@@ -96,6 +96,10 @@ jobs:
               -e NEXTAUTH_URL='https://ssagtecnologia.com' \
               -e ADMIN_USER='${{ secrets.ADMIN_USER }}' \
               -e ADMIN_PASSWORD='${{ secrets.ADMIN_PASSWORD }}' \
+              -e SMTP_HOST='${{ secrets.SMTP_HOST }}' \
+              -e SMTP_PORT='${{ secrets.SMTP_PORT }}' \
+              -e SMTP_USER='${{ secrets.SMTP_USER }}' \
+              -e SMTP_PASS='${{ secrets.SMTP_PASS }}' \
               ghcr.io/$REPO_NAME:latest
             
             # Wait for container to start
