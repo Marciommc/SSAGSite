@@ -2,10 +2,11 @@ import Link from "next/link";
 
 const navigation = {
     solutions: [
-        { name: "ERP Industrial", href: "/erp" },
-        { name: "Automação", href: "/solucoes" },
-        { name: "Consultoria", href: "/consultoria" },
+        { name: "ERP Desktop & Access", href: "/erp" },
+        { name: "Software House", href: "/software-house" },
+        { name: "Cloud & Infra", href: "/cloud" },
         { name: "PD&I", href: "/pdi" },
+        { name: "Consultoria", href: "/consultoria" },
     ],
     company: [
         { name: "Sobre Nós", href: "/ecossistema" },

@@ -6,12 +6,12 @@ import { usePathname } from "next/navigation";
 
 const navigation = [
     { name: "Início", href: "/" },
-    { name: "Ecossistema SSAG", href: "/ecossistema" },
+    { name: "Ecossistema", href: "/ecossistema" },
     { name: "ERP", href: "/erp" },
-    { name: "Soluções", href: "/solucoes" },
+    { name: "Software House", href: "/software-house" },
+    { name: "Cloud", href: "/cloud" },
     { name: "PD&I", href: "/pdi" },
     { name: "Consultoria", href: "/consultoria" },
-    { name: "Cases", href: "/cases" },
     { name: "Contato", href: "/contato" },
 ];
 
